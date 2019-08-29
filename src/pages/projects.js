@@ -28,7 +28,9 @@ const Projects = props => {
     <Layout location={props.location}>
       <SEO title="Projets et expériences" />
       <h2 className="text-xl">Projets et expériences</h2>
-      <p>Présentation de mes projets et de mes précédentes expériences.</p>
+      <p className="mb-12">
+        Présentation de mes projets et de mes précédentes expériences.
+      </p>
       {projects.map(project => {
         const image = imagesData.images.edges.find(img => {
           return img.node.childImageSharp.fluid.src.includes(project.imageName);
