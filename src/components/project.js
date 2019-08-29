@@ -27,13 +27,13 @@ const Project = props => {
       />
       <div className="sm:w-2/3 md:w-3/5 py-12 px-6">
         <div className="flex flex-col sm:flex-row justify-between align-baseline mb-6 sm:mb-8">
-          <div className="text-2xl">{props.name}</div>
-          <div className="text-sm">
+          <div className="text-2xl md:text-3xl font-bold">{props.name}</div>
+          <div className="text-sm text-gray-600">
             <div>{date}</div>
             <div>{props.location}</div>
           </div>
         </div>
-        <div className="mb-6">{props.description}</div>
+        <div className="mb-6 text-base">{props.description}</div>
         <div className="flex flex-wrap mb-6">
           {props.tags.map(tag => (
             <span className="text-gray-700 border-green-300 border-solid border-2 rounded px-2 py-1 mr-2 mb-2 text-sm">

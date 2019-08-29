@@ -31,7 +31,7 @@
     "tags": ["HTML/CSS", "JavaScript"]
   },
   {
-    "name": "Reddit content downloader",
+    "name": "Reddit Content Downloader",
     "startDate": "Juillet",
     "endDate": "Aout 2019",
     "location": "Nantes, France",
@@ -41,7 +41,7 @@
     "tags": ["Python", "PyQT5"]
   },
   {
-    "name": "Parseur de liens Messenger",
+    "name": "Parseur de liens",
     "startDate": "Novembre 2018",
     "endDate": "Novembre 2018",
     "location": "Chiang Mai, Thaïlande",
@@ -51,7 +51,7 @@
     "tags": ["Rust", "HTML/CSS", "JavaScript", "Vue.js"]
   },
   {
-    "name": "Site web pour Kerinci Kultur",
+    "name": "Kerinci Kultur",
     "startDate": "Septembre 2018",
     "endDate": "Septembre 2018",
     "location": "Kerinci, Indonésie",
