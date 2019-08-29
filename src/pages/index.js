@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-class BlogIndex extends React.Component {
+class Home extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
@@ -25,7 +25,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex;
+export default Home;
 
 export const pageQuery = graphql`
   query {

@@ -5,9 +5,7 @@ import Nav from './nav';
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    let header;
+    const { children } = this.props;
 
     return (
       <div

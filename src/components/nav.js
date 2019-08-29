@@ -39,13 +39,13 @@ const Nav = () => {
           showMobileMenu ? 'flex' : 'hidden'
         } flex-col items-center text-lg`}
       >
-        <NavLink title="À propos" link="a-propos"></NavLink>
+        <NavLink title="À propos" link="about"></NavLink>
         <NavLink title="Projets" link="projets"></NavLink>
         <NavLink title="Blog" link="blog"></NavLink>
         <NavLink title="Contact" link="contact"></NavLink>
       </div>
       <div className="hidden sm:block sm:float-right">
-        <NavLink title="À propos" link="a-propos"></NavLink>
+        <NavLink title="À propos" link="about"></NavLink>
         <NavLink title="Projets" link="projets"></NavLink>
         <NavLink title="Blog" link="blog"></NavLink>
         <NavLink title="Contact" link="contact"></NavLink>
