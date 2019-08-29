@@ -5,7 +5,8 @@
     "endDate": "Présent",
     "location": "Nantes, France",
     "description": "Création d'une plateforme facilitant la découverte de contenu culturel sur YouTube. Utilisation de Vue.js et de TypeScript. Design from scratch. Back-end en Python. Gestion à l'aide d'un Kanban.",
-    "link": "https://educulture.video"
+    "link": "https://educulture.video",
+    "imageName": "educulture.png"
   },
   {
     "name": "Guess the Date",
@@ -13,7 +14,8 @@
     "endDate": "Avril 2019",
     "location": "Nantes, France",
     "description": "Création d'un jeu mobile (Android et iOS). Le but est de deviner la date de création/sortie à partir d'une image (peinture et jeux-vidéos). Utilisation de React Native, Realm et Firebase.",
-    "link": "https://guessthedate.io"
+    "link": "https://guessthedate.io",
+    "imageName": "guessthedate.png"
   },
   {
     "name": "The Stoic Homepage",
@@ -22,7 +24,8 @@
     "location": "Chiang Mai, Thaïlande",
     "description": "Page d’accueil affichant des citations célèbres de Stoïciens (plusieurs milliers de visiteurs uniques) et contenant diverses ressources.",
     "link": "https://stoic.thehomepage.io",
-    "github": "https://github.com/RomainCscn/stoic-homepage"
+    "github": "https://github.com/RomainCscn/stoic-homepage",
+    "imageName": "stoic.png"
   },
   {
     "name": "Reddit content downloader",
@@ -30,7 +33,8 @@
     "endDate": "Aout 2019",
     "location": "Nantes, France",
     "description": "Application Python (cli et Mac) permettant de télécharger des images/vidéos à partir de Reddit.",
-    "github": "https://github.com/RomainCscn/reddit-content-downloader"
+    "github": "https://github.com/RomainCscn/reddit-content-downloader",
+    "imageName": "reddit.png"
   },
   {
     "name": "Parseur de liens Messenger",
@@ -38,7 +42,8 @@
     "endDate": "Novembre 2018",
     "location": "Chiang Mai, Thaïlande",
     "description": "Réalisé en Rust, utilisation en cli ou serveur web (API REST). Client web en Vue.js affichant liens , filtres et statistiques.",
-    "github": "https://github.com/RomainCscn/messenger-links-parser"
+    "github": "https://github.com/RomainCscn/messenger-links-parser",
+    "imageName": "parser.png"
   },
   {
     "name": "Site web pour Kerinci Kultur",
@@ -47,6 +52,7 @@
     "location": "Kerinci, Indonésie",
     "description": "Site web promotionnel pour une association (KerinciKultur) basée en Indonésie. Réalisé en utilisant Gatsby (React).",
     "link": "https://kerincikultur.com",
-    "github": "https://github.com/RomainCscn/kerinci"
+    "github": "https://github.com/RomainCscn/kerinci",
+    "imageName": "kerinci.png"
   }
 ]
