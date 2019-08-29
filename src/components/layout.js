@@ -8,20 +8,13 @@ class Layout extends React.Component {
     const { children } = this.props;
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: '1024px',
-          padding: `24px 12px`,
-        }}
-      >
+      <div className="container mx-auto px-4">
         <Nav />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer className="mt-16">
+          © {new Date().getFullYear()} Romain Cascino. Site créé avec
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>.
         </footer>
       </div>
     );
