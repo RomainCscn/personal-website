@@ -1,8 +1,8 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,9 +12,10 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Homepage" />
-        <h2 style={{ fontFamily: "Montserrat, sans-serif", fontWeight: 400 }}>
-          Je suis <strong>Romain Cascino</strong>, ingénieur en informatique et
-          développeur web. Freelance et actuellement basé à Nantes.
+        <h2>
+          Je suis <span className="font-bold">Romain Cascino</span>, ingénieur
+          en informatique spécialisé dans le développement web. Actuellement en
+          freelance et basé à Nantes.
         </h2>
       </Layout>
     );
