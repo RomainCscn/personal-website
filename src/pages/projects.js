@@ -43,6 +43,7 @@ const Projects = props => {
             link={project.link}
             github={project.github}
             location={project.location}
+            tags={project.tags}
             image={image.node.childImageSharp.fluid}
           ></Project>
         );

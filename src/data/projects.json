@@ -4,55 +4,61 @@
     "startDate": "Janvier 2019",
     "endDate": "Présent",
     "location": "Nantes, France",
-    "description": "Création d'une plateforme facilitant la découverte de contenu culturel sur YouTube. Utilisation de Vue.js et de TypeScript. Design from scratch. Back-end en Python. Gestion à l'aide d'un Kanban.",
+    "description": "Création d'une plateforme facilitant la découverte de contenu culturel sur YouTube. Design from scratch.",
     "link": "https://educulture.video",
-    "imageName": "educulture.png"
+    "imageName": "educulture.png",
+    "tags": ["HTML/CSS", "Vue.js", "TypeScript", "Python"]
   },
   {
     "name": "Guess the Date",
     "startDate": "Mars",
     "endDate": "Avril 2019",
     "location": "Nantes, France",
-    "description": "Création d'un jeu mobile (Android et iOS). Le but est de deviner la date de création/sortie à partir d'une image (peinture et jeux-vidéos). Utilisation de React Native, Realm et Firebase.",
+    "description": "Création d'un jeu mobile (Android et iOS) dont le but est de deviner la date de création/sortie à partir d'une image (peinture et jeux-vidéos).",
     "link": "https://guessthedate.io",
-    "imageName": "guessthedate.png"
+    "imageName": "guessthedate.png",
+    "tags": ["React Native", "MobX", "Realm", "Firebase"]
   },
   {
     "name": "The Stoic Homepage",
     "startDate": "Novembre 2018",
     "endDate": "Novembre 2018",
     "location": "Chiang Mai, Thaïlande",
-    "description": "Page d’accueil affichant des citations célèbres de Stoïciens (plusieurs milliers de visiteurs uniques) et contenant diverses ressources.",
+    "description": "Page d’accueil affichant des citations célèbres de Stoïciens (plusieurs milliers de visiteurs uniques) et contenant diverses ressources sur le Stoïcisme.",
     "link": "https://stoic.thehomepage.io",
     "github": "https://github.com/RomainCscn/stoic-homepage",
-    "imageName": "stoic.png"
+    "imageName": "stoic.png",
+    "tags": ["HTML/CSS", "JavaScript"]
   },
   {
     "name": "Reddit content downloader",
     "startDate": "Juillet",
     "endDate": "Aout 2019",
     "location": "Nantes, France",
-    "description": "Application Python (cli et Mac) permettant de télécharger des images/vidéos à partir de Reddit.",
+    "description": "Application Python (cli et Mac) permettant de télécharger des images/vidéos à partir de différents subreddit.",
     "github": "https://github.com/RomainCscn/reddit-content-downloader",
-    "imageName": "reddit.png"
+    "imageName": "reddit.png",
+    "tags": ["Python", "PyQT5"]
   },
   {
     "name": "Parseur de liens Messenger",
     "startDate": "Novembre 2018",
     "endDate": "Novembre 2018",
     "location": "Chiang Mai, Thaïlande",
-    "description": "Réalisé en Rust, utilisation en cli ou serveur web (API REST). Client web en Vue.js affichant liens , filtres et statistiques.",
+    "description": "Parseurs de liens envoyés lors d'une discussion Facebook messenger avec une utilisation en cli ou en serveur web (API REST). Client web en Vue.js affichant les liens, différents filtres et statistiques.",
     "github": "https://github.com/RomainCscn/messenger-links-parser",
-    "imageName": "parser.png"
+    "imageName": "parser.png",
+    "tags": ["Rust", "HTML/CSS", "JavaScript", "Vue.js"]
   },
   {
     "name": "Site web pour Kerinci Kultur",
     "startDate": "Septembre 2018",
     "endDate": "Septembre 2018",
     "location": "Kerinci, Indonésie",
-    "description": "Site web promotionnel pour une association (KerinciKultur) basée en Indonésie. Réalisé en utilisant Gatsby (React).",
+    "description": "Site web promotionnel pour une association (Kerinci Kultur) basée en Indonésie. Réalisé lors d'un volontariat.",
     "link": "https://kerincikultur.com",
     "github": "https://github.com/RomainCscn/kerinci",
-    "imageName": "kerinci.png"
+    "imageName": "kerinci.png",
+    "tags": ["HTML/CSS", "JavaScript", "React", "Gatsby"]
   }
 ]

@@ -20,9 +20,9 @@ const Project = props => {
       : `${props.startDate} – ${props.endDate}`;
 
   return (
-    <div className="flex flex-col sm:flex-row shadow-xl mb-12 bg-white rounded-lg">
+    <div className="flex flex-col sm:flex-row shadow-custom mb-12 bg-white rounded-lg">
       <Image
-        className="w-full sm:w-1/3 md:w-2/5 mr-12 sm:mr-6"
+        className="w-full rounded-lg rounded-br-none rounded-bl-none sm:rounded-bl-lg sm:rounded-tr-none sm:w-1/3 md:w-2/5 mr-12 sm:mr-6"
         fluid={props.image}
       />
       <div className="sm:w-2/3 md:w-3/5 py-12 px-6">
@@ -34,6 +34,13 @@ const Project = props => {
           </div>
         </div>
         <div className="mb-6">{props.description}</div>
+        <div className="flex flex-wrap mb-6">
+          {props.tags.map(tag => (
+            <span className="text-gray-700 border-green-300 border-solid border-2 rounded px-2 py-1 mr-2 mb-2 text-sm">
+              {tag}
+            </span>
+          ))}
+        </div>
         {props.link ? <Link link={props.link} text="Voir" /> : null}
         {props.github ? <Link link={props.github} text="GitHub" /> : null}
       </div>
