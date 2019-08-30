@@ -3,9 +3,9 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 
 const Description = props => (
-  <div className='flex flex-col mb-16 p-6 bg-white rounded-lg shadow-custom sm:flex-row sm:items-start md:items-center'>
+  <div className='flex flex-col mb-16 p-3 bg-white rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center'>
     <Image
-      className='rounded-full sm:mr-6 md:mr-12 sm:w-1/4'
+      className='rounded-full mb-8 sm:mr-6 sm:mb-0 md:mr-12 sm:w-1/4'
       fluid={props.image}
     />
     <div className='sm:w-3/4'>

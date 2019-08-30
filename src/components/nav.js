@@ -3,7 +3,10 @@ import { Link } from 'gatsby';
 
 const NavLink = props => {
   return (
-    <Link className={`${props.className} mr-8`} to={props.link}>
+    <Link
+      activeClassName='active-nav'
+      className={`${props.className} font-semibold text-gray-600 mr-8`}
+      to={props.link}>
       {props.title}
     </Link>
   );
@@ -14,7 +17,7 @@ const Nav = () => {
   return (
     <nav className='py-12 mb-8'>
       <NavLink
-        className='text-xl font-bold'
+        className='text-xl text-gray-800 font-bold'
         title='Romain Cascino'
         link='/'></NavLink>
       <div

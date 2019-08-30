@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Description from '../components/description';
 import Skills from '../components/skills';
+import Hobbies from '../components/hobbies';
 import cv from '../../content/assets/cv.pdf';
 
 const CV = props => (
@@ -37,18 +38,13 @@ const About = props => {
   return (
     <Layout location={props.location}>
       <SEO title='À propos' />
-      <div className='mb-16'>
+      <div className='mb-12'>
         <h2 className='font-bold text-4xl'>À propos</h2>
         <p className='italic'>Mon histoire, mes compétences, mes intérêts</p>
       </div>
       <Description image={data.profil.childImageSharp.fluid} />
       <Skills />
-      <p>
-        J'occupe mon temps libre en lisant, en travaillant sur mes projets
-        personnels, en randonnant ou en cuisinant pour mes amis. Le projet qui
-        me rend le plus fier est EduCulture, une plateforme recensant les
-        meilleures chaînes YouTube francophones culturelles et scientifiques.
-      </p>
+      <Hobbies />
       <p>
         Actuellement disponible pour de nouveaux projets en tant que freelance.
       </p>
