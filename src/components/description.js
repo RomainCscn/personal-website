@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
+import CV from './cv';
 
 const Description = props => (
-  <div className='flex flex-col mb-16 p-3 bg-white rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center'>
+  <div className='flex flex-col mb-16 px-3 py-6 bg-white rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center'>
     <Image
       className='rounded-full mb-8 sm:mr-6 sm:mb-0 md:mr-12 sm:w-1/4'
       fluid={props.image}
@@ -34,6 +35,9 @@ const Description = props => (
         parcours développement web
       </a>{' '}
       de la plateforme OpenClassrooms.
+      <div className='flex justify-center sm:justify-start'>
+        <CV className='mt-6' />
+      </div>
     </div>
   </div>
 );
