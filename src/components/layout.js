@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Nav from './nav';
 
@@ -8,13 +7,13 @@ class Layout extends React.Component {
     const { children } = this.props;
 
     return (
-      <div className="container mx-auto px-4">
+      <div className='container mx-auto px-4'>
         <Nav />
         <main>{children}</main>
-        <footer className="mt-16">
+        <footer className='mt-16'>
           © {new Date().getFullYear()} Romain Cascino. Site créé avec
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>.
+          <a href='https://www.gatsbyjs.org'>Gatsby</a>.
         </footer>
       </div>
     );

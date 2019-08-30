@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -11,13 +11,13 @@ class Home extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Homepage" />
-        <h2 className="text-xl">
-          Je suis <span className="font-bold">Romain Cascino</span>, ingénieur
+        <SEO title='Homepage' />
+        <h2 className='text-xl'>
+          Je suis <span className='font-bold'>Romain Cascino</span>, ingénieur
           en informatique spécialisé dans le{' '}
-          <span className="font-bold text-green-600">développement web</span>.
+          <span className='font-bold text-green-600'>développement web</span>.
           Actuellement en{' '}
-          <span className="font-bold text-green-600">freelance</span> et basé à
+          <span className='font-bold text-green-600'>freelance</span> et basé à
           Nantes.
         </h2>
       </Layout>
