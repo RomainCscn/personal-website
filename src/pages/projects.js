@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Project from '../components/project';
+import Available from '../components/available';
 
 import projects from '../data/projects.json';
 
@@ -52,6 +53,7 @@ const Projects = props => {
             image={image.node.childImageSharp.fluid}></Project>
         );
       })}
+      <Available />
     </Layout>
   );
 };
