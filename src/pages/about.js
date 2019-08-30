@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import Description from '../components/description';
 import Skills from '../components/skills';
 import Hobbies from '../components/hobbies';
+import Available from '../components/available';
 
 const About = props => {
   const data = useStaticQuery(graphql`
@@ -39,9 +40,7 @@ const About = props => {
       <Description image={data.profil.childImageSharp.fluid} />
       <Skills />
       <Hobbies image={data.hobbies.childImageSharp.fluid} />
-      <p>
-        Actuellement disponible pour de nouveaux projets en tant que freelance.
-      </p>
+      <Available />
     </Layout>
   );
 };
