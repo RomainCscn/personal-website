@@ -31,8 +31,10 @@ const About = props => {
     <Layout location={props.location}>
       <SEO title='À propos' />
       <div className='mb-12'>
-        <h2 className='font-bold text-4xl'>À propos</h2>
-        <p className='italic'>Mon histoire, mes compétences, mes intérêts</p>
+        <h2 className='serif text-4xl'>À propos</h2>
+        <p className='serif italic text-lg'>
+          Mon histoire, mes compétences, mes intérêts
+        </p>
       </div>
       <Description image={data.profil.childImageSharp.fluid} />
       <Skills />

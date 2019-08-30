@@ -28,10 +28,10 @@ const Projects = props => {
     <Layout location={props.location}>
       <SEO title='Projets et expériences' />
       <div className='mb-16'>
-        <h2 className='font-bold text-4xl'>Projets personnels</h2>
-        <p className='italic'>
-          Une liste des projets personnels que j'ai créés et sur lesquels j'ai
-          travaillé ces derniers temps.
+        <h2 className='serif text-4xl'>Projets personnels</h2>
+        <p className='serif italic'>
+          Retrouvez les projets personnels sur lesquels j'ai travaillé ces
+          derniers temps.
         </p>
       </div>
       {projects.map(project => {

@@ -8,7 +8,7 @@ const Hobbies = props => (
       fluid={props.image}
     />
     <div className='sm:w-3/4'>
-      <p className='text-xl italic mb-2'>Dans mon temps libre</p>
+      <p className='serif text-xl italic mb-2'>Dans mon temps libre</p>
       J'aime lire sur des sujets variés (philosophie, nutrition, sciences,
       écologie, psychologie, numérique, etc.) afin d'approfondir mes
       connaissances et m'ouvrir à de nouveaux sujets. Je prends le temps de

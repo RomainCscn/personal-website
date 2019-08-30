@@ -29,7 +29,7 @@ const Skills = props => {
   return (
     <div className='mb-16 p-6 bg-white rounded-lg shadow-custom md:flex'>
       <div>
-        <h3 className='text-xl font-bold mb-6'>Compétences techniques</h3>
+        <h3 className='serif italic text-xl mb-6'>Compétences techniques</h3>
         <div className='flex flex-wrap mb-6'>
           {skills.map(skill => (
             <Tag tag={skill} className='bg-gray-200 text-blue-700' />
@@ -37,7 +37,9 @@ const Skills = props => {
         </div>
       </div>
       <div>
-        <h3 className='text-xl font-bold mb-6'>Ce qu'on apprécie chez moi</h3>
+        <h3 className='serif italic text-xl mb-6'>
+          Ce qu'on apprécie chez moi
+        </h3>
         <div className='flex flex-wrap mb-6'>
           {softSkills.map(skill => (
             <Tag tag={skill} className='bg-gray-200 text-green-700' />

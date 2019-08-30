@@ -26,7 +26,7 @@ const Project = props => {
       />
       <div className='sm:w-2/3 md:w-3/5 py-12 px-6'>
         <div className='flex flex-col sm:flex-row justify-between align-baseline mb-6 sm:mb-8'>
-          <div className='text-2xl md:text-3xl font-bold'>{props.name}</div>
+          <div className='text-2xl md:text-3xl font-semibold'>{props.name}</div>
           <div className='text-sm text-gray-600'>
             <div>{date}</div>
             <div>{props.location}</div>
