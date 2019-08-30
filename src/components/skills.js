@@ -32,7 +32,7 @@ const Skills = props => {
         <h3 className='serif italic text-xl mb-6'>Compétences techniques</h3>
         <div className='flex flex-wrap mb-6'>
           {skills.map(skill => (
-            <Tag tag={skill} className='bg-gray-200 text-blue-700' />
+            <Tag key={skill} tag={skill} className='bg-gray-200 text-blue-700' />
           ))}
         </div>
       </div>
@@ -42,7 +42,7 @@ const Skills = props => {
         </h3>
         <div className='flex flex-wrap mb-6'>
           {softSkills.map(skill => (
-            <Tag tag={skill} className='bg-gray-200 text-green-700' />
+            <Tag key={skill} tag={skill} className='bg-gray-200 text-green-700' />
           ))}
         </div>
       </div>
