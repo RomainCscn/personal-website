@@ -3,17 +3,7 @@ import { Link } from 'gatsby';
 
 const NavLink = props => {
   return (
-    <Link
-      className={`${props.className}`}
-      style={{
-        ...props.style,
-        boxShadow: `none`,
-        textDecoration: `none`,
-        color: `inherit`,
-        marginRight: '12px',
-      }}
-      to={props.link}
-    >
+    <Link className={`${props.className} mr-8`} to={props.link}>
       {props.title}
     </Link>
   );
@@ -22,12 +12,12 @@ const NavLink = props => {
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
-    <nav
-      style={{
-        marginBottom: '32px',
-      }}
-    >
-      <NavLink title="Romain Cascino" link="/" className="font-bold"></NavLink>
+    <nav className="py-12 mb-8">
+      <NavLink
+        className="text-xl font-bold"
+        title="Romain Cascino"
+        link="/"
+      ></NavLink>
       <div
         className="block sm:hidden float-right cursor-pointer"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
@@ -37,14 +27,8 @@ const Nav = () => {
       <div
         className={`${
           showMobileMenu ? 'flex' : 'hidden'
-        } flex-col items-center text-lg`}
+        } flex-col items-center text-lg sm:block sm:float-right`}
       >
-        <NavLink title="À propos" link="/about"></NavLink>
-        <NavLink title="Projets" link="/projects"></NavLink>
-        <NavLink title="Blog" link="/blog"></NavLink>
-        <NavLink title="Contact" link="/contact"></NavLink>
-      </div>
-      <div className="hidden sm:block sm:float-right">
         <NavLink title="À propos" link="/about"></NavLink>
         <NavLink title="Projets" link="/projects"></NavLink>
         <NavLink title="Blog" link="/blog"></NavLink>
