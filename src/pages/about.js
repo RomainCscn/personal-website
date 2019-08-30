@@ -26,8 +26,38 @@ class About extends React.Component {
         <SEO title='À propos' />
         <h2 className='text-xl'>À propos</h2>
         <p>
-          Des phrases à propos de moi qui font sens (ce qui n'est pas le cas
-          pour l'instant...).
+          Je m'appelle Romain Cascino et je suis ingénieur en informatique
+          spécialisé dans le développement web. En 2017, j'obtiens mon diplôme
+          et pars travailler à Nantes après une alternance d'un an chez Atos. Je
+          rejoins MyScript en tant que développeur web où j'étais responsable
+          des librairies front-end et en charge des démos web. En août 2018, je
+          pars en Asie pour prendre le temps de développer de nouveaux projets.
+          Je reviens m'installer à Nantes en Janvier 2019, travaille sur
+          différents projets et commence mon activité de développeur web en
+          freelance, en télétravail. À temps partiel, je supervise et
+          j'accompagne des étudiants suivant le parcours développement web sur
+          la plateforme OpenClassrooms afin de les former et de les guider vers
+          le métier de développeur.
+        </p>
+        <p>
+          Compétences et technologies utilisées : HTML/CSS, JavaScript,
+          TypeScript, Vue.js, React, React Native, Python, Django, Rust, SQL,
+          NoSQL, Rust, Java.
+        </p>
+        <p>
+          Ce qu'on apprécie chez moi : Ma gestion des priorités, mon
+          adaptabilité, mon autonomie, ma curiosité, mon empathie, mon ouverture
+          d'esprit, mon sens du détail et mon attrait pour le design.
+        </p>
+        <p>
+          J'occupe mon temps libre en lisant, en travaillant sur mes projets
+          personnels, en randonnant ou en cuisinant pour mes amis. Le projet qui
+          me rend le plus fier est EduCulture, une plateforme recensant les
+          meilleures chaînes YouTube francophones culturelles et scientifiques.
+        </p>
+        <p>
+          Actuellement disponible pour de nouveaux projets en tant que
+          freelance.
         </p>
         <CV />
       </Layout>
