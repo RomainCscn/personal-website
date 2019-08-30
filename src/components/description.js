@@ -41,10 +41,10 @@ const Description = props => (
       <div className='flex justify-center items-center mt-6 sm:justify-start'>
         <CV className='mr-2' />
         <a href='https://github.com/romaincscn'>
-          <img className='w-8 mx-2' src={github}></img>
+          <img className='w-8 mx-2' src={github} alt='GitHub icon'></img>
         </a>
         <a href='https://www.linkedin.com/in/romaincascino/'>
-          <img className='w-8 mx-2' src={linkedin}></img>
+          <img className='w-8 mx-2' src={linkedin} alt='LinkedIn icon'></img>
         </a>
         <a href='mailto:contact@romaincascino.com'>
           <svg
