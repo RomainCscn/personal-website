@@ -2,12 +2,12 @@ import React from 'react';
 
 const Available = props => {
   return (
-    <div className='inline-block mb-16 p-6 text-xl text-gray-800 bg-teal-100 rounded-lg shadow-custom'>
+    <div className='inline-block mb-16 p-6 text-xl text-gray-800 bg-green-100 rounded-lg shadow-custom'>
       <div className='serif italic mb-3'>Un projet ? Un besoin ?</div>
       <div className='mb-6'>Je suis actuellement disponible en freelance.</div>
       <a
         href='mailto:contact@romaincascino.com'
-        className={`${props.className} float-right bg-teal-300 hover:bg-teal-400 text-teal-800 font-bold py-2 px-4 rounded inline-flex items-center`}>
+        className={`${props.className} float-right bg-green-300 hover:bg-green-400 text-green-800 font-bold py-2 px-4 rounded inline-flex items-center`}>
         <svg
           className='fill-current w-6 h-6 mr-2'
           xmlns='http://www.w3.org/2000/svg'
