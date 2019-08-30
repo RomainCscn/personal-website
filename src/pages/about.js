@@ -32,6 +32,13 @@ const About = props => {
           }
         }
       }
+      hobbies: file(absolutePath: { regex: "/hobbies.png/" }) {
+        childImageSharp {
+          fluid(maxWidth: 600, maxHeight: 600, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -44,7 +51,7 @@ const About = props => {
       </div>
       <Description image={data.profil.childImageSharp.fluid} />
       <Skills />
-      <Hobbies />
+      <Hobbies image={data.hobbies.childImageSharp.fluid} />
       <p>
         Actuellement disponible pour de nouveaux projets en tant que freelance.
       </p>
