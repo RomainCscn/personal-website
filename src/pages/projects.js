@@ -26,11 +26,9 @@ const Projects = props => {
 
   return (
     <Layout location={props.location}>
-      <SEO title="Projets et expériences" />
-      <h2 className="text-xl">Projets et expériences</h2>
-      <p className="mb-12">
-        Présentation de mes projets et de mes précédentes expériences.
-      </p>
+      <SEO title='Projets et expériences' />
+      <h2 className='text-xl'>Projets</h2>
+      <p className='mb-12'>Présentation de mes projets.</p>
       {projects.map(project => {
         const image = imagesData.images.edges.find(img => {
           return img.node.childImageSharp.fluid.src.includes(project.imageName);
@@ -46,8 +44,7 @@ const Projects = props => {
             github={project.github}
             location={project.location}
             tags={project.tags}
-            image={image.node.childImageSharp.fluid}
-          ></Project>
+            image={image.node.childImageSharp.fluid}></Project>
         );
       })}
     </Layout>
