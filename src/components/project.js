@@ -1,13 +1,27 @@
 import React from 'react';
 import Image from 'gatsby-image';
 import Tag from './tag';
+import github from '../../content/assets/images/logo/github-dark.svg';
+import link from '../../content/assets/images/logo/link.svg';
+
+const GitHubLink = props => {
+  return (
+    <a
+      href={props.link}
+      className={`${props.className} bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
+      <img className='w-5 mr-2' src={github} alt='GitHub logo' />
+      <span>GitHub</span>
+    </a>
+  );
+};
 
 const Link = props => {
   return (
     <a
       href={props.link}
-      className='bg-green-500 hover:bg-green-600 text-white font-bold mr-2 py-2 px-4 rounded'>
-      {props.text}
+      className={`${props.className} bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
+      <img className='w-5 mr-2' src={link} alt='Link logo' />
+      <span>Voir</span>
     </a>
   );
 };
@@ -38,8 +52,8 @@ const Project = props => {
             <Tag tag={tag} className='bg-gray-200 text-gray-800' />
           ))}
         </div>
-        {props.link ? <Link link={props.link} text='Voir' /> : null}
-        {props.github ? <Link link={props.github} text='GitHub' /> : null}
+        {props.link ? <Link link={props.link} /> : null}
+        {props.github ? <GitHubLink link={props.github} /> : null}
       </div>
     </div>
   );

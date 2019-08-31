@@ -32,7 +32,6 @@ const Nav = () => {
         <NavLink title='À propos' link='/about'></NavLink>
         <NavLink title='Projets' link='/projects'></NavLink>
         <NavLink title='Blog' link='/blog'></NavLink>
-        <NavLink title='Contact' link='/contact'></NavLink>
       </div>
     </nav>
   );

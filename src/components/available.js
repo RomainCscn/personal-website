@@ -4,7 +4,10 @@ const Available = props => {
   return (
     <div className='inline-block mb-16 p-6 text-xl text-gray-800 bg-green-100 rounded-lg shadow-custom'>
       <div className='serif italic mb-3'>Un projet ? Un besoin ?</div>
-      <div className='mb-6'>Je suis actuellement disponible en freelance.</div>
+      <div className='mb-6'>
+        Je suis actuellement disponible en{' '}
+        <span className='font-bold'>freelance</span>.
+      </div>
       <a
         href='mailto:contact@romaincascino.com'
         className={`${props.className} float-right bg-green-300 hover:bg-green-400 text-green-800 font-bold py-2 px-4 rounded inline-flex items-center`}>
