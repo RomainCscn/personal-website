@@ -15,6 +15,17 @@ body {
   font-family: 'Libre Baskerville', serif;
 }
 
+.hello-box::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #5a67d8;
+  position: absolute;
+  right: 15px;
+  bottom: -5px;
+  transform: rotate(45deg);
+}
+
 .external-link {
   @apply underline;
 }
@@ -30,4 +41,11 @@ body {
   background-position: 0 100%;
   padding-bottom: 8px;
   color: #2d3748;
+}
+
+.underline-custom {
+  background-image: linear-gradient(120deg, #69d392, #69d392);
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+  background-position: 0 100%;
 }

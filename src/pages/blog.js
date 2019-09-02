@@ -11,7 +11,7 @@ const BlogIndex = props => {
       progress: file(absolutePath: { regex: "/progress.png/" }) {
         childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 1000, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
