@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import cv from '../../content/assets/cv.pdf';
 
 const NavLink = props => {
   return (
@@ -31,6 +32,9 @@ const Footer = () => {
             className='text-green-400 sm:mr-4'
             href='https://www.linkedin.com/in/romaincascino/'>
             LinkedIn
+          </a>
+          <a className='text-green-400 sm:mr-4' href={cv}>
+            Mon CV
           </a>
         </div>
         <div className='flex flex-col sm:flex-row my-6'>
