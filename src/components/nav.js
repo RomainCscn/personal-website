@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
+import rcLogo from '../../content/assets/images/logo/rc_logo.svg';
+
 const NavLink = props => {
   return (
     <Link
@@ -15,15 +17,16 @@ const NavLink = props => {
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
-    <nav className='py-12 mb-8'>
-      <NavLink
-        className='text-xl text-gray-800 font-bold'
-        title='Romain Cascino'
-        link='/'></NavLink>
-      <div
-        className='block sm:hidden float-right cursor-pointer mt-1'
-        onClick={() => setShowMobileMenu(!showMobileMenu)}>
-        Menu
+    <nav className='sm:flex sm:items-center sm:justify-between py-12 mb-8'>
+      <div className='flex items-center justify-between'>
+        <Link to='/'>
+          <img className='w-16' src={rcLogo} alt='RC Logo'></img>
+        </Link>
+        <div
+          className='block sm:hidden float-right cursor-pointer mt-1 text-xl font-bold'
+          onClick={() => setShowMobileMenu(!showMobileMenu)}>
+          Menu
+        </div>
       </div>
       <div
         className={`${
