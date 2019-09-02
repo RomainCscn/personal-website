@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import cv from '../../content/assets/cv.pdf';
 
+import rcLogo from '../../content/assets/images/logo/rc_logo_light.svg';
+
 const NavLink = props => {
   return (
     <Link
@@ -16,7 +18,9 @@ const Footer = () => {
   return (
     <footer className='bg-gray-800 mt-16 px-2 py-12 text-gray-100'>
       <div className='container mx-auto'>
-        <div className='text-2xl'>Romain Cascino</div>
+        <Link to='/'>
+          <img className='w-16 mb-4' src={rcLogo} alt='RC Logo'></img>
+        </Link>
         <div className='flex flex-col sm:flex-row'>
           <a
             className='text-green-400 sm:mr-4'
@@ -37,7 +41,7 @@ const Footer = () => {
             Mon CV
           </a>
         </div>
-        <div className='flex flex-col sm:flex-row my-6'>
+        <div className='flex flex-col sm:flex-row my-8'>
           <NavLink title='À propos' link='/about'></NavLink>
           <NavLink title='Projets' link='/projects'></NavLink>
           <NavLink title='Blog' link='/blog'></NavLink>
