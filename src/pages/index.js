@@ -26,7 +26,10 @@ const Home = props => {
       <SEO title='Accueil' />
       <div className='mb-24'>
         <div className='hello-box relative bg-indigo-600 inline-block mb-4 p-2 rounded text-white'>
-          Bonjour, je suis Romain Cascino <span role='img'>👋🏻</span>
+          Bonjour, je suis Romain Cascino{' '}
+          <span role='img' aria-label='wave'>
+            👋🏻
+          </span>
         </div>
         <h2 className='text-2xl font-semibold'>
           Ingénieur en informatique spécialisé dans le{' '}
