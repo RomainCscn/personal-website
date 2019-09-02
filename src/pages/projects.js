@@ -11,7 +11,9 @@ import projects from '../data/projects.json';
 const Projects = props => {
   const imagesData = useStaticQuery(graphql`
     query Projects {
-      images: allFile(filter: { sourceInstanceName: { eq: "projects-images" } }) {
+      images: allFile(
+        filter: { sourceInstanceName: { eq: "projects-images" } }
+      ) {
         edges {
           node {
             childImageSharp {
@@ -31,8 +33,7 @@ const Projects = props => {
       <div className='mb-16'>
         <h2 className='serif text-4xl'>Projets personnels</h2>
         <p className='serif italic'>
-          Retrouvez les projets personnels sur lesquels j'ai travaillé ces
-          derniers temps.
+          Les projets personnels sur lesquels j'ai travaillé ces derniers temps.
         </p>
       </div>
       {projects.map(project => {

@@ -9,12 +9,12 @@ const Hobbies = props => (
     />
     <div className='sm:w-3/4'>
       <p className='serif text-xl italic mb-2'>Dans mon temps libre</p>
-      J'aime lire sur des sujets variés (philosophie, nutrition, sciences,
-      écologie, psychologie, numérique, etc.) afin d'approfondir mes
-      connaissances et m'ouvrir à de nouveaux sujets. Je prends le temps de
-      créer et de travailler sur des projets personnels. Quand je le peux,
-      j'aime partir randonner, camper et m'immerger en pleine nature. J'aime
-      aussi cuisiner, seul ou pour mes amis.
+      J'aime lire sur des sujets variés (philosophie, sciences, écologie,
+      psychologie, numérique, etc.) afin d'approfondir mes connaissances et
+      m'ouvrir à de nouveaux sujets. Je prends le temps de créer et de
+      travailler sur des projets personnels. Quand je le peux, j'aime partir
+      randonner, camper et m'immerger en pleine nature. J'apprécie également
+      cuisiner, seul ou pour mes amis.
     </div>
   </div>
 );

@@ -14,8 +14,9 @@ const Description = props => (
     />
     <div className='sm:w-3/4'>
       Je m'appelle Romain Cascino et je suis ingénieur en informatique,
-      spécialisé dans le développement web. J'obtiens mon diplôme en 2017 et
-      rejoins MyScript, à Nantes, en tant que développeur web responsable des{' '}
+      spécialisé dans le développement web. J'ai obtenu mon diplôme en 2017 et
+      j'ai rejoins MyScript, à Nantes, en tant que développeur web responsable
+      des{' '}
       <a className='external-link' href='https://github.com/MyScript'>
         librairies front-end
       </a>{' '}
@@ -23,9 +24,9 @@ const Description = props => (
       <a className='external-link' href='https://webdemo.myscript.com'>
         webdemo
       </a>
-      . En août 2018, je pars en Asie pour prendre du temps et me consacrer à de
-      nouvelles expériences. Je reviens m'installer à Nantes en Janvier 2019
-      afin de travailler sur
+      . En août 2018, je suis parti en Asie du sud-est lors d'un voyage en
+      solitaire, pour prendre de temps et vivre de nouvelles expériences. Je
+      reviens m'installer à Nantes en Janvier 2019 afin de travailler sur
       <Link className='internal-link' to='/projects'>
         {' '}
         mes projets
@@ -53,7 +54,10 @@ const Description = props => (
             viewBox='0 0 24 24'>
             <g>
               <path fill='none' d='M0 0h24v24H0z' />
-              <path fill='#38a169' d='M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z' />
+              <path
+                fill='#38a169'
+                d='M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z'
+              />
             </g>
           </svg>
         </a>
