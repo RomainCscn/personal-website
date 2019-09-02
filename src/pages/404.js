@@ -1,32 +1,38 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-class NotFoundPage extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
-        <h1>Not Found</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </Layout>
-    )
-  }
-}
-
-export default NotFoundPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+const PageNotFound = props => {
+  const data = useStaticQuery(graphql`
+    query PageNotFoundQuery {
+      notfound: file(absolutePath: { regex: "/notfound.png/" }) {
+        childImageSharp {
+          fluid(maxWidth: 600, maxHeight: 600, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
-  }
-`
+  `);
+
+  return (
+    <Layout location={props.location}>
+      <SEO title='Page non trouvée' />
+      <div className='mb-12'>
+        <h2 className='serif text-4xl'>Page non trouvée</h2>
+        <p className='serif italic text-lg'>
+          Oops... veuillez vérifier l'url et réessayer
+        </p>
+      </div>
+      <Image
+        className='mx-auto w-full sm:w-3/4 md:w-1/2'
+        fluid={data.notfound.childImageSharp.fluid}
+      />
+    </Layout>
+  );
+};
+
+export default PageNotFound;
