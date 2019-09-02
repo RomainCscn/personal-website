@@ -8,7 +8,7 @@ const GitHubLink = props => {
   return (
     <a
       href={props.link}
-      className={`${props.className} bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
+      className={`${props.className} bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
       <img className='w-5 mr-2' src={github} alt='GitHub logo' />
       <span>GitHub</span>
     </a>
@@ -19,7 +19,7 @@ const Link = props => {
   return (
     <a
       href={props.link}
-      className={`${props.className} bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
+      className={`${props.className} bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
       <img className='w-5 mr-2' src={link} alt='Link logo' />
       <span>Voir</span>
     </a>

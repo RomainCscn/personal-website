@@ -32,11 +32,10 @@ const Home = props => {
           Ingénieur en informatique spécialisé dans le{' '}
           <span className='font-bold text-green-600'>développement web</span>.
           <br />
-          Actuellement en{' '}
-          <span className='font-bold text-green-600'>freelance</span> et basé à
-          Nantes.
+          Actuellement basé à Nantes en{' '}
+          <span className='font-bold text-green-600'>freelance</span>.
         </h2>
-        <div className='mt-10 mb-32'>
+        <div className='mt-10 mb-24'>
           <h3 className='serif italic text-xl mb-4'>
             Vous souhaitez en savoir plus ? Retrouvez :
           </h3>
@@ -45,8 +44,15 @@ const Home = props => {
           </Link>
         </div>
       </div>
-      <div className='mb-32'>
-        <h3 className='serif italic text-2xl mb-4'>Mon dernier projet</h3>
+      <div className='mb-24'>
+        <div className='sm:flex sm:flex-row justify-between sm:items-center mb-6'>
+          <h3 className='serif italic text-2xl'>Mon dernier projet</h3>
+          <Link
+            to='/projects'
+            className='hidden sm:inline-block bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded'>
+            Voir tous mes projets
+          </Link>
+        </div>
         <Project
           key={projects[0].name}
           name={projects[0].name}
@@ -60,8 +66,8 @@ const Home = props => {
           image={data.project.childImageSharp.fluid}></Project>
         <Link
           to='/projects'
-          className='bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-2 py-2 px-4 rounded'>
-          En voir plus
+          className='inline-block sm:hidden bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded'>
+          Voir tous les projets
         </Link>
       </div>
       <Available />
