@@ -24,7 +24,7 @@ const Home = props => {
   return (
     <Layout location={props.location}>
       <SEO title='Accueil' />
-      <div className='mb-24'>
+      <div className='sm:mt-24 mb-32'>
         <div className='hello-box relative bg-indigo-600 inline-block mb-4 p-2 rounded text-white'>
           Bonjour, je suis Romain Cascino{' '}
           <span role='img' aria-label='wave'>
@@ -38,7 +38,7 @@ const Home = props => {
           Actuellement basé à Nantes en{' '}
           <span className='font-bold text-green-600'>freelance</span>.
         </h2>
-        <div className='mt-10 mb-24'>
+        <div className='mt-10'>
           <h3 className='serif italic text-xl mb-4'>
             Vous souhaitez en savoir plus ? Retrouvez :
           </h3>
@@ -47,7 +47,7 @@ const Home = props => {
           </Link>
         </div>
       </div>
-      <div className='mb-24'>
+      <div className='mb-32'>
         <div className='sm:flex sm:flex-row justify-between sm:items-center mb-6'>
           <h3 className='serif italic text-2xl'>Mon dernier projet</h3>
           <Link
