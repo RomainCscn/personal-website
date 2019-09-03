@@ -1,5 +1,7 @@
 import React from 'react';
 
+import maltLogo from '../../content/assets/images/logo/malt.svg';
+
 const Available = props => {
   return (
     <div className='inline-block mb-16 p-6 text-xl text-gray-800 bg-green-100 rounded-lg shadow-custom'>
@@ -21,6 +23,12 @@ const Available = props => {
           </g>
         </svg>
         <span>Me contacter</span>
+      </a>
+      <a
+        href='https://www.malt.fr/profile/romaincascino'
+        className={`${props.className} bg-green-300 hover:bg-green-400 text-green-800 font-bold py-2 px-4 rounded inline-flex items-center`}>
+        <img className='w-6 h-6 mr-2' src={maltLogo}></img>
+        <span>Mon profil Malt</span>
       </a>
     </div>
   );
