@@ -24,9 +24,9 @@ const Description = props => (
       <a className='external-link' href='https://webdemo.myscript.com'>
         webdemo
       </a>
-      . En août 2018, je suis parti en Asie du sud-est lors d'un voyage en
-      solitaire, pour prendre de temps et vivre de nouvelles expériences. Je
-      reviens m'installer à Nantes en Janvier 2019 afin de travailler sur
+      . En août 2018, je suis parti en Asie du Sud-Est lors d'un voyage en
+      solitaire, pour prendre du temps et vivre de nouvelles expériences. Je
+      reviens m'installer à Nantes en janvier 2019 afin de travailler sur
       <Link className='internal-link' to='/projects'>
         {' '}
         mes projets
