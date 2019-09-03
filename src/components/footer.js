@@ -23,21 +23,21 @@ const Footer = () => {
         </Link>
         <div className='flex flex-col sm:flex-row'>
           <a
-            className='text-green-400 sm:mr-4'
+            className='text-indigo-300 sm:mr-4'
             href='mailto:contact@romaincascino.com'>
             contact@romaincascino.com
           </a>
           <a
-            className='text-green-400 sm:mr-4'
+            className='text-indigo-300 sm:mr-4'
             href='https://github.com/romaincscn'>
             Github
           </a>
           <a
-            className='text-green-400 sm:mr-4'
+            className='text-indigo-300 sm:mr-4'
             href='https://www.linkedin.com/in/romaincascino/'>
             LinkedIn
           </a>
-          <a className='text-green-400 sm:mr-4' href={cv}>
+          <a className='text-indigo-300 sm:mr-4' href={cv}>
             Mon CV
           </a>
         </div>

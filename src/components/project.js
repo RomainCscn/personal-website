@@ -33,7 +33,7 @@ const Project = props => {
       : `${props.startDate} – ${props.endDate}`;
 
   return (
-    <div className='flex flex-col sm:flex-row shadow-custom mb-12 bg-white rounded-lg'>
+    <div className='flex flex-col sm:flex-row shadow-custom mb-16 bg-white rounded-lg'>
       <Image
         className='w-full rounded-lg rounded-br-none rounded-bl-none sm:rounded-bl-lg sm:rounded-tr-none sm:w-1/3 md:w-2/5 mr-12 sm:mr-6'
         fluid={props.image}

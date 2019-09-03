@@ -31,7 +31,7 @@ const About = props => {
   return (
     <Layout location={props.location}>
       <SEO title='À propos' />
-      <div className='mb-12'>
+      <div className='mb-16'>
         <h2 className='serif text-4xl'>À propos</h2>
         <p className='serif italic text-lg'>
           Mon histoire, mes compétences, mes intérêts
