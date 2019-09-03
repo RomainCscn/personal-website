@@ -38,7 +38,8 @@
     "description": "Application Python (cli et Mac) permettant de télécharger des images/vidéos à partir de différents subreddit.",
     "github": "https://github.com/RomainCscn/reddit-content-downloader",
     "imageName": "reddit.png",
-    "tags": ["Python", "PyQT5"]
+    "tags": ["Python", "PyQT5"],
+    "objectFit": "contain"
   },
   {
     "name": "Parseur de liens",

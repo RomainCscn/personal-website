@@ -17,7 +17,7 @@ const Projects = props => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 600, maxHeight: 450) {
+              fluid(maxWidth: 600, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -36,24 +36,29 @@ const Projects = props => {
           Les projets personnels sur lesquels j'ai travaillé ces derniers temps.
         </p>
       </div>
-      {projects.map(project => {
-        const image = imagesData.images.edges.find(img => {
-          return img.node.childImageSharp.fluid.src.includes(project.imageName);
-        });
-        return (
-          <Project
-            key={project.name}
-            name={project.name}
-            startDate={project.startDate}
-            endDate={project.endDate}
-            description={project.description}
-            link={project.link}
-            github={project.github}
-            location={project.location}
-            tags={project.tags}
-            image={image.node.childImageSharp.fluid}></Project>
-        );
-      })}
+      <div className='flex flex-col items-center'>
+        {projects.map(project => {
+          const image = imagesData.images.edges.find(img => {
+            return img.node.childImageSharp.fluid.src.includes(
+              project.imageName
+            );
+          });
+          return (
+            <Project
+              key={project.name}
+              name={project.name}
+              startDate={project.startDate}
+              endDate={project.endDate}
+              description={project.description}
+              link={project.link}
+              github={project.github}
+              location={project.location}
+              tags={project.tags}
+              objectFit={project.objectFit}
+              image={image.node.childImageSharp.fluid}></Project>
+          );
+        })}
+      </div>
       <Available />
     </Layout>
   );

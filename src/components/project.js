@@ -33,13 +33,14 @@ const Project = props => {
       : `${props.startDate} – ${props.endDate}`;
 
   return (
-    <div className='flex flex-col sm:flex-row shadow-custom mb-16 bg-white rounded-lg'>
+    <div className='flex flex-col lg:flex-row max-w-lg lg:max-w-full lg:w-full shadow-custom mb-16 bg-white rounded-lg'>
       <Image
-        className='w-full rounded-lg rounded-br-none rounded-bl-none sm:rounded-bl-lg sm:rounded-tr-none sm:w-1/3 md:w-2/5 mr-12 sm:mr-6'
+        imgStyle={{ 'object-fit': props.objectFit ? props.objectFit : 'cover' }}
+        className='w-full rounded-lg rounded-br-none rounded-bl-none sm:rounded-bl-lg sm:rounded-tr-none lg:w-1/2 mr-12 sm:mr-6'
         fluid={props.image}
       />
-      <div className='sm:w-2/3 md:w-3/5 py-12 px-6'>
-        <div className='flex flex-col sm:flex-row justify-between align-baseline mb-6 sm:mb-8'>
+      <div className='lg:w-1/2 py-12 px-6'>
+        <div className='flex flex-col lg:flex-row justify-between align-baseline mb-6 sm:mb-8'>
           <div className='text-2xl md:text-3xl font-semibold'>{props.name}</div>
           <div className='text-sm text-gray-600'>
             <div>{date}</div>

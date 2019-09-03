@@ -25,20 +25,22 @@ const Description = props => (
         webdemo
       </a>
       . En août 2018, je suis parti en Asie du Sud-Est lors d'un voyage en
-      solitaire, pour prendre du temps et vivre de nouvelles expériences. Je
-      reviens m'installer à Nantes en janvier 2019 afin de travailler sur
-      <Link className='internal-link' to='/projects'>
-        {' '}
-        mes projets
-      </Link>{' '}
-      et de commencer mon activité de développeur web en freelance. À temps
-      partiel, je supervise et j'accompagne des étudiants sur le{' '}
-      <a
-        className='external-link'
-        href='https://openclassrooms.com/fr/paths/48-developpeur-web-junior'>
-        parcours développement web
-      </a>{' '}
-      de la plateforme OpenClassrooms.
+      solitaire, pour prendre du temps et vivre de nouvelles expériences. <br />
+      <p className='mt-2'>
+        Je reviens m'installer à Nantes en janvier 2019 afin de travailler sur
+        <Link className='internal-link' to='/projects'>
+          {' '}
+          mes projets
+        </Link>{' '}
+        et de commencer mon activité de développeur web en freelance. À temps
+        partiel, je supervise et j'accompagne des étudiants sur le{' '}
+        <a
+          className='external-link'
+          href='https://openclassrooms.com/fr/paths/48-developpeur-web-junior'>
+          parcours développement web
+        </a>{' '}
+        de la plateforme OpenClassrooms.
+      </p>
       <div className='flex justify-center items-center mt-6 sm:justify-start'>
         <CV className='mr-2' />
         <a href='https://github.com/romaincscn'>
