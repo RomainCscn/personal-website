@@ -60,9 +60,11 @@ const Home = props => {
           </Link>
         </div>
       </div>
-      <div className='mb-32'>
+      <div className='flex flex-col items-center lg:block mb-32'>
         <div className='sm:flex sm:flex-row justify-between sm:items-center mb-6'>
-          <h3 className='serif italic text-2xl'>Mon dernier projet</h3>
+          <h3 className='serif italic text-2xl sm:mr-12 lg:mr-0'>
+            Mon dernier projet
+          </h3>
           <Link
             to='/projects'
             className='hidden sm:inline-block bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded'>
