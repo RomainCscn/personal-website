@@ -27,7 +27,7 @@ const Available = props => {
       <a
         href='https://www.malt.fr/profile/romaincascino'
         className={`${props.className} bg-green-300 hover:bg-green-400 text-green-800 font-bold py-2 px-4 rounded inline-flex items-center`}>
-        <img className='w-6 h-6 mr-2' src={maltLogo}></img>
+        <img className='w-6 h-6 mr-2' src={maltLogo} alt='Malt logo'></img>
         <span>Mon profil Malt</span>
       </a>
     </div>
