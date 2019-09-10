@@ -10,7 +10,7 @@ import Available from '../components/available';
 
 const About = props => {
   const data = useStaticQuery(graphql`
-    query AboutQuery {
+    query {
       profil: file(absolutePath: { regex: "/profile.jpeg/" }) {
         childImageSharp {
           fluid(maxWidth: 600, maxHeight: 600, quality: 100) {

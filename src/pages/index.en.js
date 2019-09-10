@@ -11,7 +11,7 @@ import projects from '../data/projects.json';
 
 const Home = props => {
   const data = useStaticQuery(graphql`
-    query HomeQuery {
+    query {
       project: file(absolutePath: { regex: "/educulture.png/" }) {
         childImageSharp {
           fluid(maxWidth: 600, maxHeight: 450) {

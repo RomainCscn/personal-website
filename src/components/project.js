@@ -35,7 +35,7 @@ const Project = props => {
   return (
     <div className='flex flex-col lg:flex-row max-w-lg lg:max-w-full lg:w-full shadow-custom mb-16 bg-white rounded-lg'>
       <Image
-        imgStyle={{ 'object-fit': props.objectFit ? props.objectFit : 'cover' }}
+        imgStyle={{ objectFit: props.objectFit ? props.objectFit : 'cover' }}
         className='w-full rounded-lg rounded-br-none rounded-bl-none sm:rounded-bl-lg sm:rounded-tr-none lg:w-1/2 mr-12 sm:mr-6'
         fluid={props.image}
       />

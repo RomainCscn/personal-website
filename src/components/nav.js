@@ -16,6 +16,7 @@ const NavLink = props => {
 
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const isEnglish = window.location.pathname.includes('/en/');
   return (
     <nav className='sm:flex sm:items-center sm:justify-between py-12 mb-8'>
       <div className='flex items-center justify-between'>
@@ -32,9 +33,29 @@ const Nav = () => {
         className={`${
           showMobileMenu ? 'flex' : 'hidden'
         } flex-col items-center text-2xl mt-6 sm:block sm:float-right sm:text-lg sm:mt-0`}>
-        <NavLink title='À propos' link='/about'></NavLink>
-        <NavLink title='Projets' link='/projects'></NavLink>
-        <NavLink title='Blog' link='/blog'></NavLink>
+        <NavLink
+          title='À propos'
+          link={`${isEnglish ? '/en/' : '/'}about`}></NavLink>
+        <NavLink
+          title='Projets'
+          link={`${isEnglish ? '/en/' : '/'}projects`}></NavLink>
+        <NavLink
+          title='Blog'
+          link={`${isEnglish ? '/en/' : '/'}blog`}></NavLink>
+        <Link
+          className={isEnglish ? 'initial' : 'hidden'}
+          to={window.location.pathname.replace('/en', '')}>
+          <span role='img' aria-label='fr'>
+            🇫🇷
+          </span>
+        </Link>
+        <Link
+          className={isEnglish ? 'hidden' : 'initial'}
+          to={`/en${window.location.pathname}`}>
+          <span role='img' aria-label='us'>
+            🇺🇸
+          </span>
+        </Link>
       </div>
     </nav>
   );

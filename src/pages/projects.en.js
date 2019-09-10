@@ -10,7 +10,7 @@ import projects from '../data/projects.json';
 
 const Projects = props => {
   const imagesData = useStaticQuery(graphql`
-    query Projects {
+    query {
       images: allFile(
         filter: { sourceInstanceName: { eq: "projects-images" } }
       ) {
