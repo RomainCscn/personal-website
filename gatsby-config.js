@@ -31,6 +31,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'fr',
+        useLangKeyLayout: false,
+        prefixDefault: false,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [

@@ -18,13 +18,19 @@ const PageNotFound = props => {
     }
   `);
 
+  const isEnglish = window.location.pathname.includes('/en/');
+
   return (
     <Layout location={props.location}>
-      <SEO title='Page non trouvée' />
+      <SEO title={isEnglish ? 'Page not found' : 'Page non trouvée'} />
       <div className='mb-12'>
-        <h2 className='serif text-4xl'>Page non trouvée</h2>
+        <h2 className='serif text-4xl'>
+          {isEnglish ? 'Page not found' : 'Page non trouvée'}
+        </h2>
         <p className='serif italic text-lg'>
-          Oops... veuillez vérifier l'url et réessayer
+          {isEnglish
+            ? 'Oops... please check the url and try again'
+            : "Oops... veuillez vérifier l'url et réessayer"}
         </p>
       </div>
       <Image

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import CV from './cv';
 
@@ -13,36 +12,9 @@ const Description = props => (
       fluid={props.image}
     />
     <div className='sm:w-3/4'>
-      Je m'appelle Romain Cascino et je suis ingénieur en informatique,
-      spécialisé dans le développement web. J'ai obtenu mon diplôme en 2017 et
-      j'ai rejoins MyScript, à Nantes, en tant que développeur web responsable
-      des{' '}
-      <a className='external-link' href='https://github.com/MyScript'>
-        librairies front-end
-      </a>{' '}
-      et des{' '}
-      <a className='external-link' href='https://webdemo.myscript.com'>
-        webdemo
-      </a>
-      . En août 2018, je suis parti en Asie du Sud-Est lors d'un voyage en
-      solitaire, pour prendre du temps et vivre de nouvelles expériences. <br />
-      <p className='mt-2'>
-        Je reviens m'installer à Nantes en janvier 2019 afin de travailler sur
-        <Link className='internal-link' to='/projects'>
-          {' '}
-          mes projets
-        </Link>{' '}
-        et de commencer mon activité de développeur web en freelance. À temps
-        partiel, je supervise et j'accompagne des étudiants sur le{' '}
-        <a
-          className='external-link'
-          href='https://openclassrooms.com/fr/paths/48-developpeur-web-junior'>
-          parcours développement web
-        </a>{' '}
-        de la plateforme OpenClassrooms.
-      </p>
+      {props.i18n.description}
       <div className='flex justify-center items-center mt-6 sm:justify-start'>
-        <CV className='mr-2' />
+        <CV i18n={props.i18n.resume} className='mr-2' />
         <a href='https://github.com/romaincscn'>
           <img className='w-8 mx-2' src={github} alt='GitHub icon'></img>
         </a>
