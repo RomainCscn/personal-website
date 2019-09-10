@@ -29,7 +29,7 @@ const Projects = props => {
 
   return (
     <Layout location={props.location}>
-      <SEO title='Projets et expériences' />
+      <SEO title='Personal projects' />
       <div className='mb-16'>
         <h2 className='serif text-4xl'>Personal projects</h2>
         <p className='serif italic'>

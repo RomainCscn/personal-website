@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 
 const BlogIndex = props => {
   const data = useStaticQuery(graphql`
-    query blogQuery {
+    query {
       progress: file(absolutePath: { regex: "/progress.png/" }) {
         childImageSharp {
           fluid(maxWidth: 1000, maxHeight: 1000, quality: 100) {
@@ -20,10 +20,10 @@ const BlogIndex = props => {
 
   return (
     <Layout location={props.location}>
-      <SEO title='Tous les articles' />
+      <SEO title='All articles' />
       <div className='mb-12'>
         <h2 className='serif text-4xl'>Articles</h2>
-        <p className='serif italic text-lg'>Articles et essais à venir</p>
+        <p className='serif italic text-lg'>Articles and essays to come</p>
       </div>
       <Image
         className='w-full sm:w-2/3 lg:w-1/2 mx-auto'
