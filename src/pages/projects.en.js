@@ -31,9 +31,9 @@ const Projects = props => {
     <Layout location={props.location}>
       <SEO title='Projets et expériences' />
       <div className='mb-16'>
-        <h2 className='serif text-4xl'>Projets personnels</h2>
+        <h2 className='serif text-4xl'>Personal projects</h2>
         <p className='serif italic'>
-          Les projets personnels sur lesquels j'ai travaillé ces derniers temps.
+          The personal projects I've been working on lately.
         </p>
       </div>
       <div className='flex flex-col items-center'>
@@ -45,17 +45,18 @@ const Projects = props => {
           });
           return (
             <Project
-              key={project.name}
-              name={project.name}
-              startDate={project.startDate}
-              endDate={project.endDate}
-              description={project.description}
+              key={project.nameEn}
+              name={project.nameEn}
+              startDate={project.startDateEn}
+              endDate={project.endDateEn}
+              description={project.descriptionEn}
               link={project.link}
               github={project.github}
-              location={project.location}
+              location={project.locationEn}
               tags={project.tags}
               objectFit={project.objectFit}
-              image={image.node.childImageSharp.fluid}></Project>
+              image={image.node.childImageSharp.fluid}
+              lang='en'></Project>
           );
         })}
       </div>

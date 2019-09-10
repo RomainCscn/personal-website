@@ -21,7 +21,7 @@ const Link = props => {
       href={props.link}
       className={`${props.className} bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
       <img className='w-5 mr-2' src={link} alt='Link logo' />
-      <span>Voir</span>
+      <span>{props.buttonText}</span>
     </a>
   );
 };
@@ -51,7 +51,12 @@ const Project = props => {
             <Tag tag={tag} className='bg-gray-200 text-gray-800' />
           ))}
         </div>
-        {props.link ? <Link link={props.link} /> : null}
+        {props.link ? (
+          <Link
+            buttonText={props.lang === 'fr' ? 'Voir' : 'See'}
+            link={props.link}
+          />
+        ) : null}
         {props.github ? <GitHubLink link={props.github} /> : null}
       </div>
     </div>

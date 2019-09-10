@@ -55,7 +55,8 @@ const Projects = props => {
               location={project.location}
               tags={project.tags}
               objectFit={project.objectFit}
-              image={image.node.childImageSharp.fluid}></Project>
+              image={image.node.childImageSharp.fluid}
+              lang='fr'></Project>
           );
         })}
       </div>
