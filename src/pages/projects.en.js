@@ -33,7 +33,7 @@ const Projects = props => {
       <div className='mb-16'>
         <h2 className='serif text-4xl'>Personal projects</h2>
         <p className='serif italic'>
-          The personal projects I've been working on lately.
+          The personal projects I've been working on lately
         </p>
       </div>
       <div className='flex flex-col items-center'>

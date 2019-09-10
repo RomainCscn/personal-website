@@ -11,7 +11,7 @@ import Available from '../components/available';
 const i18n = {
   description: (
     <p>
-      My name is Romain Cascino, I'm a Software Engineer specialised in the web
+      My name is Romain Cascino, I'm a software engineer specialized in web
       development. I got my degree in 2017 and joined MyScript at Nantes where I
       worked as a web developer, in charge of the{' '}
       <a className='external-link' href='https://github.com/MyScript'>
@@ -22,7 +22,7 @@ const i18n = {
         webdemo
       </a>
       . In august 2018, I traveled to South-East Asia during a solo trip, to
-      take time and live new experiences. <br />
+      take time for myself and live new experiences. <br />
       <p className='mt-2'>
         I went back to Nantes in january 2019 to work on
         <Link className='internal-link' to='/projects'>
