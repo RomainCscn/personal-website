@@ -3,6 +3,19 @@ import { Link } from 'gatsby';
 
 import rcLogo from '../../content/assets/images/logo/rc_logo.svg';
 
+const i18n = {
+  en: {
+    about: 'About',
+    projects: 'Projects',
+    blog: 'Blog',
+  },
+  fr: {
+    about: 'À propos',
+    projects: 'Projets',
+    blog: 'Blog',
+  },
+};
+
 const NavLink = props => {
   return (
     <Link
@@ -17,10 +30,11 @@ const NavLink = props => {
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const isEnglish = window.location.pathname.includes('/en/');
+  const lang = isEnglish ? 'en' : 'fr';
   return (
     <nav className='sm:flex sm:items-center sm:justify-between py-12 mb-8'>
       <div className='flex items-center justify-between'>
-        <Link to='/'>
+        <Link to={isEnglish ? '/en/' : '/'}>
           <img className='w-16' src={rcLogo} alt='RC Logo'></img>
         </Link>
         <div
@@ -34,13 +48,13 @@ const Nav = () => {
           showMobileMenu ? 'flex' : 'hidden'
         } flex-col items-center text-2xl mt-6 sm:block sm:float-right sm:text-lg sm:mt-0`}>
         <NavLink
-          title='À propos'
+          title={i18n[lang].about}
           link={`${isEnglish ? '/en/' : '/'}about`}></NavLink>
         <NavLink
-          title='Projets'
+          title={i18n[lang].projects}
           link={`${isEnglish ? '/en/' : '/'}projects`}></NavLink>
         <NavLink
-          title='Blog'
+          title={i18n[lang].blog}
           link={`${isEnglish ? '/en/' : '/'}blog`}></NavLink>
         <Link
           className={isEnglish ? 'initial' : 'hidden'}
