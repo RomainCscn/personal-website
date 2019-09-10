@@ -59,7 +59,7 @@ const Projects = props => {
           );
         })}
       </div>
-      <Available />
+      <Available lang='en' />
     </Layout>
   );
 };

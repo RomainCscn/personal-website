@@ -88,7 +88,7 @@ const Home = props => {
           Voir tous les projets
         </Link>
       </div>
-      <Available />
+      <Available lang='en' />
     </Layout>
   );
 };
