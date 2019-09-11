@@ -19,7 +19,7 @@ const BlogIndex = props => {
   `);
 
   return (
-    <Layout location={props.location}>
+    <Layout lang='en' location={props.location}>
       <SEO title='All articles' />
       <div className='mb-12'>
         <h2 className='serif text-4xl'>Articles</h2>

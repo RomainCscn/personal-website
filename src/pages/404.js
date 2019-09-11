@@ -26,7 +26,7 @@ const PageNotFound = props => {
   }, [isEnglish, lang]);
 
   return (
-    <Layout location={props.location}>
+    <Layout lang={lang} location={props.location}>
       <SEO title={isEnglish ? 'Page not found' : 'Page non trouvée'} />
       <div className='mb-12'>
         <h2 className='serif text-4xl'>

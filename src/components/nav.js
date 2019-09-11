@@ -1,20 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
 import rcLogo from '../../content/assets/images/logo/rc_logo.svg';
-
-const i18n = {
-  en: {
-    about: 'About',
-    projects: 'Projects',
-    blog: 'Blog',
-  },
-  fr: {
-    about: 'À propos',
-    projects: 'Projets',
-    blog: 'Blog',
-  },
-};
 
 const NavLink = props => {
   return (
@@ -27,20 +14,12 @@ const NavLink = props => {
   );
 };
 
-const Nav = () => {
+const Nav = props => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [isEnglish, setIsEnglish] = useState(false);
-  const [lang, setLang] = useState('fr');
-  const [pathname, setPathname] = useState('');
-  useEffect(() => {
-    setIsEnglish(window.location.pathname.includes('/en/'));
-    setLang(isEnglish ? 'en' : 'fr');
-    setPathname(window.location.pathname);
-  }, [isEnglish, lang]);
   return (
     <nav className='sm:flex sm:items-center sm:justify-between py-12 mb-8'>
       <div className='flex items-center justify-between'>
-        <Link to={isEnglish ? '/en/' : '/'}>
+        <Link to={props.i18n.homeLink}>
           <img className='w-16' src={rcLogo} alt='RC Logo'></img>
         </Link>
         <div
@@ -54,26 +33,17 @@ const Nav = () => {
           showMobileMenu ? 'flex' : 'hidden'
         } flex-col items-center text-2xl mt-6 sm:block sm:float-right sm:text-lg sm:mt-0`}>
         <NavLink
-          title={i18n[lang].about}
-          link={`${isEnglish ? '/en/' : '/'}about`}></NavLink>
+          title={props.i18n.aboutTitle}
+          link={props.i18n.aboutLink}></NavLink>
         <NavLink
-          title={i18n[lang].projects}
-          link={`${isEnglish ? '/en/' : '/'}projects`}></NavLink>
+          title={props.i18n.projectsTitle}
+          link={props.i18n.projectsLink}></NavLink>
         <NavLink
-          title={i18n[lang].blog}
-          link={`${isEnglish ? '/en/' : '/'}blog`}></NavLink>
-        <Link
-          className={isEnglish ? 'initial' : 'hidden'}
-          to={pathname.replace('/en', '')}>
-          <span role='img' aria-label='fr'>
-            🇫🇷
-          </span>
-        </Link>
-        <Link
-          className={isEnglish ? 'hidden' : 'initial'}
-          to={`/en${pathname}`}>
-          <span role='img' aria-label='us'>
-            🇺🇸
+          title={props.i18n.blogTitle}
+          link={props.i18n.blogLink}></NavLink>
+        <Link to={props.i18n.flagLink}>
+          <span role='img' aria-label={props.i18n.emoji}>
+            {props.i18n.flag}
           </span>
         </Link>
       </div>

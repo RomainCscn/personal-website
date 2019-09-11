@@ -30,7 +30,7 @@ const Home = props => {
   `);
 
   return (
-    <Layout location={props.location}>
+    <Layout lang='fr' location={props.location}>
       <SEO title='Accueil' />
       <div className='hello-box relative bg-indigo-600 inline-block mb-4 mt-12 p-2 rounded-lg text-white text-lg'>
         Bonjour, je suis Romain Cascino{' '}

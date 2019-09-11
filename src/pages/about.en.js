@@ -89,7 +89,7 @@ const About = props => {
   `);
 
   return (
-    <Layout location={props.location}>
+    <Layout lang='en' location={props.location}>
       <SEO title='About me' />
       <div className='mb-16'>
         <h2 className='serif text-4xl'>About me</h2>

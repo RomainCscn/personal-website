@@ -22,7 +22,7 @@ const i18n = {
         <span className='font-bold text-indigo-600'>freelancer</span>.
       </h2>
       <Link
-        to='/about'
+        to='/en/about'
         className='float-right mt-6 bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded'>
         More information
       </Link>
@@ -53,7 +53,7 @@ const Home = props => {
   `);
 
   return (
-    <Layout location={props.location}>
+    <Layout lang='en' location={props.location}>
       <SEO title='Homepage' />
       <div className='hello-box relative bg-indigo-600 inline-block mb-4 mt-12 p-2 rounded-lg text-white text-lg'>
         {i18n.hello}
@@ -74,7 +74,7 @@ const Home = props => {
             {i18n.lastProject}
           </h3>
           <Link
-            to='/projects'
+            to='/en/projects'
             className='hidden sm:inline-block bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded'>
             {i18n.allProjects}
           </Link>
@@ -92,7 +92,7 @@ const Home = props => {
           image={data.project.childImageSharp.fluid}
           lang='en'></Project>
         <Link
-          to='/projects'
+          to='/en/projects'
           className='inline-block sm:hidden bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded'>
           {i18n.allProjects}
         </Link>
