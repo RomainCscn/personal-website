@@ -1,9 +1,9 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
 
-import Bio from "../components/bio";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Bio from '../components/bio';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,8 +12,8 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+      <Layout lang='en' location={this.props.location} title={siteTitle}>
+        <SEO title='All posts' />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
@@ -22,9 +22,8 @@ class BlogIndex extends React.Component {
               <header>
                 <h3
                   style={{
-                    marginBottom: "6px"
-                  }}
-                >
+                    marginBottom: '6px',
+                  }}>
                   <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                     {title}
                   </Link>
@@ -34,7 +33,7 @@ class BlogIndex extends React.Component {
               <section>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt
+                    __html: node.frontmatter.description || node.excerpt,
                   }}
                 />
               </section>

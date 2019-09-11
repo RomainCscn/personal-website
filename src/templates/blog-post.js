@@ -12,7 +12,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout lang='en' location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -23,16 +23,14 @@ class BlogPostTemplate extends React.Component {
               style={{
                 marginTop: '12px',
                 marginBottom: 0,
-              }}
-            >
+              }}>
               {post.frontmatter.title}
             </h1>
             <p
               style={{
                 display: `block`,
                 marginBottom: '12px',
-              }}
-            >
+              }}>
               {post.frontmatter.date}
             </p>
           </header>
@@ -55,18 +53,17 @@ class BlogPostTemplate extends React.Component {
               justifyContent: `space-between`,
               listStyle: `none`,
               padding: 0,
-            }}
-          >
+            }}>
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <Link to={previous.fields.slug} rel='prev'>
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <Link to={next.fields.slug} rel='next'>
                   {next.frontmatter.title} →
                 </Link>
               )}
