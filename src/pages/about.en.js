@@ -40,7 +40,10 @@ const i18n = {
       </p>
     </div>
   ),
-  resume: 'My resume',
+  resume: {
+    text: 'My resume',
+    cv: false,
+  },
   skillsTitle: 'Technical skills',
   softSkillsTitle: 'What people like about me',
   softSkills: [

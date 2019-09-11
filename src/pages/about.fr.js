@@ -41,7 +41,10 @@ const i18n = {
       </p>
     </div>
   ),
-  resume: 'Mon CV',
+  resume: {
+    text: 'Mon CV',
+    cv: true,
+  },
   skillsTitle: 'Compétences techniques',
   softSkillsTitle: "Ce qu'on apprécie chez moi",
   softSkills: [

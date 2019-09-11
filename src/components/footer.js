@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import cv from '../../content/assets/cv.pdf';
+import resume from '../../content/assets/resume.pdf';
 
 import rcLogo from '../../content/assets/images/logo/rc_logo_light.svg';
 
@@ -37,8 +38,10 @@ const Footer = props => {
             href='https://www.linkedin.com/in/romaincascino/'>
             LinkedIn
           </a>
-          <a className='text-indigo-300 sm:mr-4' href={cv}>
-            {props.i18n.resume}
+          <a
+            className='text-indigo-300 sm:mr-4'
+            href={props.i18n.cv ? cv : resume}>
+            {props.i18n.resume.text}
           </a>
         </div>
         <div className='flex flex-col sm:flex-row my-8'>

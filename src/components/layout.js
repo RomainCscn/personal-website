@@ -15,7 +15,10 @@ const i18n = {
     flagLink: '/',
     flag: '🇫🇷',
     emoji: 'fr',
-    resume: 'My resume',
+    resume: {
+      text: 'My resume',
+      cv: false,
+    },
   },
   fr: {
     aboutTitle: 'À propos',
@@ -28,7 +31,10 @@ const i18n = {
     flagLink: '/en/',
     flag: '🇺🇸',
     emoji: 'us',
-    resume: 'Mon CV',
+    resume: {
+      text: 'Mon CV',
+      cv: true,
+    },
   },
 };
 
