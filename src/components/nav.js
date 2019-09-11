@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 
 import rcLogo from '../../content/assets/images/logo/rc_logo.svg';
@@ -29,8 +29,14 @@ const NavLink = props => {
 
 const Nav = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const isEnglish = window.location.pathname.includes('/en/');
-  const lang = isEnglish ? 'en' : 'fr';
+  const [isEnglish, setIsEnglish] = useState(false);
+  const [lang, setLang] = useState('fr');
+  const [pathname, setPathname] = useState('');
+  useEffect(() => {
+    setIsEnglish(window.location.pathname.includes('/en/'));
+    setLang(isEnglish ? 'en' : 'fr');
+    setPathname(window.location.pathname);
+  }, [isEnglish, lang]);
   return (
     <nav className='sm:flex sm:items-center sm:justify-between py-12 mb-8'>
       <div className='flex items-center justify-between'>
@@ -58,14 +64,14 @@ const Nav = () => {
           link={`${isEnglish ? '/en/' : '/'}blog`}></NavLink>
         <Link
           className={isEnglish ? 'initial' : 'hidden'}
-          to={window.location.pathname.replace('/en', '')}>
+          to={pathname.replace('/en', '')}>
           <span role='img' aria-label='fr'>
             🇫🇷
           </span>
         </Link>
         <Link
           className={isEnglish ? 'hidden' : 'initial'}
-          to={`/en${window.location.pathname}`}>
+          to={`/en${pathname}`}>
           <span role='img' aria-label='us'>
             🇺🇸
           </span>

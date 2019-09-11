@@ -10,7 +10,7 @@ import Available from '../components/available';
 
 const i18n = {
   description: (
-    <p>
+    <div>
       My name is Romain Cascino, I'm a software engineer specialized in web
       development. I got my degree in 2017 and joined MyScript at Nantes where I
       worked as a web developer, in charge of the{' '}
@@ -38,7 +38,7 @@ const i18n = {
         </a>{' '}
         .
       </p>
-    </p>
+    </div>
   ),
   resume: 'My resume',
   skillsTitle: 'Technical skills',

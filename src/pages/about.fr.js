@@ -10,7 +10,7 @@ import Available from '../components/available';
 
 const i18n = {
   description: (
-    <p>
+    <div>
       Je m'appelle Romain Cascino et je suis ingénieur en informatique,
       spécialisé dans le développement web. J'ai obtenu mon diplôme en 2017 et
       j'ai rejoins MyScript, à Nantes, en tant que développeur web responsable
@@ -39,7 +39,7 @@ const i18n = {
         </a>{' '}
         de la plateforme OpenClassrooms.
       </p>
-    </p>
+    </div>
   ),
   resume: 'Mon CV',
   skillsTitle: 'Compétences techniques',

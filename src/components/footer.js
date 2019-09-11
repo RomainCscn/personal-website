@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import cv from '../../content/assets/cv.pdf';
 
@@ -30,8 +30,12 @@ const NavLink = props => {
 };
 
 const Footer = () => {
-  const isEnglish = window.location.pathname.includes('/en/');
-  const lang = isEnglish ? 'en' : 'fr';
+  const [isEnglish, setIsEnglish] = useState(false);
+  const [lang, setLang] = useState('fr');
+  useEffect(() => {
+    setIsEnglish(window.location.pathname.includes('/en/'));
+    setLang(isEnglish ? 'en' : 'fr');
+  }, [isEnglish, lang]);
   return (
     <footer className='bg-gray-800 mt-16 px-2 py-12 text-gray-100'>
       <div className='container mx-auto'>

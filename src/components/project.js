@@ -48,7 +48,7 @@ const Project = props => {
         <div className='mb-6 text-base'>{props.description}</div>
         <div className='flex flex-wrap mb-6'>
           {props.tags.map(tag => (
-            <Tag tag={tag} className='bg-gray-200 text-gray-800' />
+            <Tag key={tag} tag={tag} className='bg-gray-200 text-gray-800' />
           ))}
         </div>
         {props.link ? (

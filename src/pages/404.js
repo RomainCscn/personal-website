@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
@@ -18,7 +18,12 @@ const PageNotFound = props => {
     }
   `);
 
-  const isEnglish = window.location.pathname.includes('/en/');
+  const [isEnglish, setIsEnglish] = useState(false);
+  const [lang, setLang] = useState('fr');
+  useEffect(() => {
+    setIsEnglish(window.location.pathname.includes('/en/'));
+    setLang(isEnglish ? 'en' : 'fr');
+  }, [isEnglish, lang]);
 
   return (
     <Layout location={props.location}>
