@@ -82,7 +82,8 @@ const Home = props => {
           github={projects[0].github}
           location={projects[0].location}
           tags={projects[0].tags}
-          image={data.project.childImageSharp.fluid}></Project>
+          image={data.project.childImageSharp.fluid}
+          lang='fr'></Project>
         <Link
           to='/projects'
           className='inline-block sm:hidden bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded'>
