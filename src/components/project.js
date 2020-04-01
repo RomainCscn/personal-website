@@ -4,6 +4,22 @@ import Tag from './tag';
 import github from '../../content/assets/images/logo/github-dark.svg';
 import link from '../../content/assets/images/logo/link.svg';
 
+const createLink = text => {
+  const textLink = text.substring(
+    text.indexOf('[') + 1,
+    text.indexOf(']', text.indexOf('[') + 1)
+  );
+  const link = text.substring(
+    text.indexOf('(') + 1,
+    text.indexOf(')', text.indexOf('[') + 1)
+  );
+  return (
+    <a className='text-indigo-800' href={link}>
+      {textLink}
+    </a>
+  );
+};
+
 const GitHubLink = props => {
   return (
     <a
@@ -40,7 +56,15 @@ const Project = props => {
         fluid={props.image}
       />
       <div className='lg:w-1/2 py-10 px-6'>
-        <div className='text-2xl md:text-3xl font-semibold'>{props.name}</div>
+        <div className='flex flex-wrap items-baseline justify-between'>
+          <div className='text-2xl md:text-3xl font-semibold'>{props.name}</div>
+          {props.collaboration && (
+            <div className='text-sm text-gray-600'>
+              {props.collaboration.split('[')[0]}
+              {createLink(props.collaboration)}
+            </div>
+          )}
+        </div>
         <div className='flex flex-wrap justify-between text-sm text-gray-600 mb-6'>
           <div className='mr-4'>{date}</div>
           <div>{props.location}</div>

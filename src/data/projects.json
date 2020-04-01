@@ -1,5 +1,29 @@
 [
   {
+    "name": "GIFinder",
+    "startDate": "Janvier",
+    "endDate": "Avril 2020",
+    "location": "Nantes, France",
+    "description": "Création d'un générateur automatique de gifs convertissant un film entier en gifs. Réalisation d'un site permettant la recherche et le partage des gifs.",
+    "collaboration": "créé avec [Arthur Capo](https://arthurcapo.fr).",
+    "nameEn": "GIFinder",
+    "startDateEn": "January",
+    "endDateEn": "April 2020",
+    "locationEn": "Nantes, France",
+    "descriptionEn": "Creation of an automated gifs generator converting a whole movie into gifs. Creation of a website allowing the search and sharing of gifs.",
+    "collaborationEn": "built with [Arthur Capo](https://arthurcapo.fr).",
+    "link": "https://gifinder.xyz",
+    "imageName": "gifinder.png",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Python",
+      "PostgreSQL"
+    ]
+  },
+  {
     "name": "EduCulture",
     "startDate": "Janvier 2019",
     "endDate": "Présent",
@@ -12,7 +36,12 @@
     "descriptionEn": "Creation of a platform to make the discovery of french cultural content on YouTube easier. Design from scratch.",
     "link": "https://educulture.video",
     "imageName": "educulture.png",
-    "tags": ["HTML/CSS", "Vue.js", "TypeScript", "Python"]
+    "tags": [
+      "HTML/CSS",
+      "Vue.js",
+      "TypeScript",
+      "Python"
+    ]
   },
   {
     "name": "Guess the Date",
@@ -27,7 +56,12 @@
     "descriptionEn": "Creation of a mobile game (Android and iOS) whose purpose is to guess the creation/release date from an image (painting and video games).",
     "link": "https://guessthedate.io",
     "imageName": "guessthedate.png",
-    "tags": ["React Native", "MobX", "Realm", "Firebase"]
+    "tags": [
+      "React Native",
+      "MobX",
+      "Realm",
+      "Firebase"
+    ]
   },
   {
     "name": "The Stoic Homepage",
@@ -43,7 +77,10 @@
     "link": "https://stoic.thehomepage.io",
     "github": "https://github.com/RomainCscn/stoic-homepage",
     "imageName": "stoic.png",
-    "tags": ["HTML/CSS", "JavaScript"]
+    "tags": [
+      "HTML/CSS",
+      "JavaScript"
+    ]
   },
   {
     "name": "Reddit Content Downloader",
@@ -58,7 +95,10 @@
     "descriptionEn": "Python application (cli and Mac) allowing you to download images/videos from different subreddit.",
     "github": "https://github.com/RomainCscn/reddit-content-downloader",
     "imageName": "reddit.png",
-    "tags": ["Python", "PyQT5"],
+    "tags": [
+      "Python",
+      "PyQT5"
+    ],
     "objectFit": "contain"
   },
   {
@@ -74,7 +114,12 @@
     "descriptionEn": "A parser of links sent during a Facebook messenger chat with client-based or web server-based use (REST API). Web client in Vue.js displaying links, different filters and statistics.",
     "github": "https://github.com/RomainCscn/messenger-links-parser",
     "imageName": "parser.png",
-    "tags": ["Rust", "HTML/CSS", "JavaScript", "Vue.js"]
+    "tags": [
+      "Rust",
+      "HTML/CSS",
+      "JavaScript",
+      "Vue.js"
+    ]
   },
   {
     "name": "Kerinci Kultur",
@@ -90,6 +135,11 @@
     "link": "https://kerincikultur.com",
     "github": "https://github.com/RomainCscn/kerinci",
     "imageName": "kerinci.png",
-    "tags": ["HTML/CSS", "JavaScript", "React", "Gatsby"]
+    "tags": [
+      "HTML/CSS",
+      "JavaScript",
+      "React",
+      "Gatsby"
+    ]
   }
 ]

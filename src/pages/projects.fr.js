@@ -47,6 +47,7 @@ const Projects = props => {
             <Project
               key={project.name}
               name={project.name}
+              collaboration={project.collaboration}
               startDate={project.startDate}
               endDate={project.endDate}
               description={project.description}

@@ -38,6 +38,11 @@ const i18n = {
         </a>{' '}
         .
       </p>
+      <p className='mt-2'>
+        Currently in a mission at TheFork where I'm building the new billing
+        system using Node.js microservices and frontend components built in
+        React.
+      </p>
     </div>
   ),
   resume: {

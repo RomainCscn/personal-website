@@ -11,6 +11,12 @@ const i18n = {
         .
       </div>
     ),
+    notAvailable: (
+      <div className='mb-6'>
+        Currently <span className='font-bold'>in a mission</span>, you can still
+        contact me for an upcoming mission!
+      </div>
+    ),
     malt: 'My Malt profile',
     contact: 'Contact me',
   },
@@ -22,6 +28,12 @@ const i18n = {
         <span className='font-bold'>freelance</span>.
       </div>
     ),
+    notAvailable: (
+      <div className='mb-6'>
+        Actuellement <span className='font-bold'>en mission</span>, n'hésitez
+        pas à me contacter pour une mission future !
+      </div>
+    ),
     malt: 'Mon profil Malt',
     contact: 'Me contacter',
   },
@@ -31,7 +43,7 @@ const Available = props => {
   return (
     <div className='inline-block mb-16 p-6 text-xl text-gray-800 bg-green-100 rounded-lg shadow-custom'>
       <div className='serif italic mb-3'>{i18n[props.lang].project}</div>
-      {i18n[props.lang].available}
+      {i18n[props.lang].notAvailable}
       <div>
         <a
           href='https://www.malt.fr/profile/romaincascino'

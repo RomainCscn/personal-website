@@ -12,7 +12,7 @@ import projects from '../data/projects.json';
 const Home = props => {
   const data = useStaticQuery(graphql`
     query {
-      project: file(absolutePath: { regex: "/educulture.png/" }) {
+      project: file(absolutePath: { regex: "/gifinder.png/" }) {
         childImageSharp {
           fluid(maxWidth: 600, maxHeight: 450) {
             ...GatsbyImageSharpFluid
@@ -74,6 +74,7 @@ const Home = props => {
         <Project
           key={projects[0].name}
           name={projects[0].name}
+          collaboration={projects[0].collaboration}
           startDate={projects[0].startDate}
           endDate={projects[0].endDate}
           description={projects[0].description}

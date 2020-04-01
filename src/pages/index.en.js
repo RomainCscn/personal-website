@@ -35,7 +35,7 @@ const i18n = {
 const Home = props => {
   const data = useStaticQuery(graphql`
     query {
-      project: file(absolutePath: { regex: "/educulture.png/" }) {
+      project: file(absolutePath: { regex: "/gifinder.png/" }) {
         childImageSharp {
           fluid(maxWidth: 600, maxHeight: 450) {
             ...GatsbyImageSharpFluid
