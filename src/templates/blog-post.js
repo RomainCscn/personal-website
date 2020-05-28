@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
@@ -7,19 +7,21 @@ import SEO from '../components/seo';
 import { ThemeContext } from '../context/theme';
 import { THEME } from '../styles/theme';
 
-const BlogPostTemplate = ({ data, location, pageContext }) => {
+const BlogPostTemplate = ({ data, pageContext }) => {
   const { colorMode } = React.useContext(ThemeContext);
   const theme = THEME[colorMode] || THEME.light;
 
   const post = data.markdownRemark;
   const { previous, next } = pageContext;
 
+  const [lang, setLang] = useState('fr');
+
+  useEffect(() => {
+    setLang(window.location.pathname.includes('/en/') ? 'en' : 'fr');
+  }, [lang]);
+
   return (
-    <Layout
-      mainClassName='max-w-screen-md mx-auto'
-      lang='en'
-      location={location}
-      theme={theme}>
+    <Layout mainClassName='max-w-screen-md mx-auto' lang={lang} theme={theme}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
