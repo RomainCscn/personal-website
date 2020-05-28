@@ -38,11 +38,11 @@ const i18n = {
   },
 };
 
-const Layout = ({ children, lang, theme }) => (
+const Layout = ({ children, mainClassName, lang, theme }) => (
   <>
     <div className='container mx-auto px-4'>
       <Nav i18n={i18n[lang]} theme={theme} />
-      <main>{children}</main>
+      <main className={mainClassName}>{children}</main>
     </div>
     <Footer i18n={i18n[lang]} />
   </>

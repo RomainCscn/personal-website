@@ -12,11 +12,14 @@ const BlogPostTemplate = ({ data, location, pageContext }) => {
   const theme = THEME[colorMode] || THEME.light;
 
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
 
   return (
-    <Layout lang='en' location={location} title={siteTitle} theme={theme}>
+    <Layout
+      mainClassName='max-w-screen-md mx-auto'
+      lang='en'
+      location={location}
+      theme={theme}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
