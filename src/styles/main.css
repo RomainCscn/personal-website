@@ -22,6 +22,25 @@ p {
   margin-bottom: 1rem;
 }
 
+.footnotes {
+  margin-top: 2rem;
+}
+
+.footnotes > ol {
+  margin-top: 1rem;
+}
+
+.footnotes > ol > li {
+  display: flex;
+}
+
+.footnotes > ol > li > p {
+  margin-right: 0.5rem;
+}
+.footnotes > ol > li {
+  display: flex;
+}
+
 .serif {
   font-family: 'Libre Baskerville', serif;
 }
