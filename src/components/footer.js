@@ -5,17 +5,17 @@ import resume from '../../content/assets/resume.pdf';
 
 import rcLogo from '../../content/assets/images/logo/rc_logo_light.svg';
 
-const NavLink = props => {
+const NavLink = (props) => {
   return (
     <Link
-      className={`${props.className} text-gray-400 my-2 sm:my-0 sm:mr-8`}
+      className={`${props.className} text-gray-400 my-2 sm:my-0 sm:mr-8 no-underline`}
       to={props.link}>
       {props.title}
     </Link>
   );
 };
 
-const Footer = props => {
+const Footer = (props) => {
   return (
     <footer className='bg-gray-800 mt-16 px-2 py-12 text-gray-100'>
       <div className='container mx-auto'>

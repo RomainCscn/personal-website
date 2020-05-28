@@ -26,7 +26,7 @@ const i18n = (theme) => ({
       </h2>
       <Link
         to='/en/about'
-        className='float-right mt-6 bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded'>
+        className='float-right mt-6 bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded no-underline'>
         More information
       </Link>
     </div>

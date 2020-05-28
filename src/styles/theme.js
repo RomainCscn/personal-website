@@ -10,6 +10,7 @@ export const THEME = {
     greenTextAccent: 'text-green-200',
     logo: 'light',
     activeNav: 'active-nav-dark',
+    shadow: '',
   },
   light: {
     primaryText: 'text-gray-800',
@@ -21,5 +22,6 @@ export const THEME = {
     blueTextAccent: 'text-blue-700',
     greenTextAccent: 'text-green-700',
     activeNav: 'active-nav-light',
+    shadow: 'shadow-custom',
   },
 };

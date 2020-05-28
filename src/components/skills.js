@@ -20,7 +20,7 @@ const Skills = (props) => {
 
   return (
     <div
-      className={`mb-16 p-6 rounded-lg shadow-custom md:flex ${props.theme.primaryBg} ${props.theme.primaryText}`}>
+      className={`mb-16 p-6 rounded-lg md:flex ${props.theme.primaryBg} ${props.theme.primaryText} ${props.theme.shadow}`}>
       <div>
         <h3 className='serif italic text-xl mb-6'>{props.i18n.skillsTitle}</h3>
         <div className='flex flex-wrap mb-6'>

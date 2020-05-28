@@ -3,7 +3,7 @@ module.exports = {
     extend: {
       boxShadow: {
         custom:
-          '0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1)',
+          '0 24px 48px rgba(50,50,93,.05),0 12px 24px rgba(50,50,93,.1),0 4px 8px rgba(0,0,0,.1)',
       },
     },
     screens: {

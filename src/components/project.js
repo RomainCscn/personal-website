@@ -58,7 +58,7 @@ const Project = ({
 
   return (
     <div
-      className={`flex flex-col lg:flex-row max-w-lg lg:max-w-full lg:w-full shadow-custom mb-16 rounded ${theme.primaryBg} ${theme.primaryText}`}>
+      className={`flex flex-col lg:flex-row max-w-lg lg:max-w-full lg:w-full mb-16 rounded ${theme.primaryBg} ${theme.primaryText} ${theme.shadow}`}>
       <Image
         imgStyle={{ objectFit: objectFit ? objectFit : 'cover' }}
         className='w-full rounded-lg rounded-br-none rounded-bl-none sm:rounded-bl-lg sm:rounded-tr-none lg:w-1/2 mr-12 sm:mr-6'
@@ -90,7 +90,11 @@ const Project = ({
           ))}
         </div>
         {link ? (
-          <Link buttonText={lang === 'fr' ? 'Voir' : 'See'} link={link} />
+          <Link
+            className='no-underline'
+            buttonText={lang === 'fr' ? 'Voir' : 'See'}
+            link={link}
+          />
         ) : null}
         {github ? <GitHubLink link={github} /> : null}
       </div>

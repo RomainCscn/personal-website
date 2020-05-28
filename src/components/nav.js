@@ -10,7 +10,7 @@ const NavLink = ({ link, title, theme }) => {
   return (
     <Link
       activeClassName={theme.activeNav}
-      className={`font-semibold my-2 sm:my-0 sm:mr-8 ${theme.secondaryText}`}
+      className={`font-semibold my-2 sm:my-0 sm:mr-8 no-underline ${theme.secondaryText}`}
       to={link}>
       {title}
     </Link>
@@ -49,7 +49,7 @@ const Nav = ({ i18n, theme }) => {
           theme={theme}
         />
         <NavLink title={i18n.blogTitle} link={i18n.blogLink} theme={theme} />
-        <Link className='my-2 sm:my-0 sm:mr-8' to={i18n.flagLink}>
+        <Link className='my-2 sm:my-0 sm:mr-8 no-underline' to={i18n.flagLink}>
           <span role='img' aria-label={i18n.emoji}>
             {i18n.flag}
           </span>

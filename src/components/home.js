@@ -39,7 +39,7 @@ const Home = ({ i18n, lang, location, theme }) => {
         </span>
       </div>
       <div
-        className={`flex flex-col items-center sm:flex-row sm:justify-center px-2 py-4 sm:p-4 rounded-lg shadow-custom mb-32 ${theme.primaryText} ${theme.primaryBg}`}>
+        className={`flex flex-col items-center sm:flex-row sm:justify-center px-2 py-4 sm:p-4 rounded-lg mb-32 ${theme.primaryText} ${theme.primaryBg} ${theme.shadow}`}>
         <Image
           className='w-1/3 mb-6 sm:mb-0 sm:w-1/6 mx-12 max-w-md'
           fluid={data.memoji.childImageSharp.fluid}
@@ -54,7 +54,7 @@ const Home = ({ i18n, lang, location, theme }) => {
           </h3>
           <Link
             to='/en/projects'
-            className='hidden sm:inline-block bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded'>
+            className='hidden sm:inline-block bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold py-2 px-4 rounded no-underline'>
             {i18n(theme).allProjects}
           </Link>
         </div>
@@ -73,7 +73,7 @@ const Home = ({ i18n, lang, location, theme }) => {
           lang='en'></Project>
         <Link
           to='/en/projects'
-          className='inline-block sm:hidden bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded'>
+          className='inline-block sm:hidden bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded no-underline'>
           {i18n(theme).allProjects}
         </Link>
       </div>

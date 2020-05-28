@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { ThemeProvider } from './src/context/theme';
+
 const AddThemeScriptTag = () => {
   let codeToRunOnClient = `
   (function() {
@@ -28,6 +30,11 @@ const AddThemeScriptTag = () => {
   // eslint-disable-next-line react/no-danger
   return <script dangerouslySetInnerHTML={{ __html: codeToRunOnClient }} />;
 };
+
 export const onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents(<AddThemeScriptTag />);
 };
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>{element}</ThemeProvider>
+);

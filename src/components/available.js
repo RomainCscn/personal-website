@@ -42,7 +42,7 @@ const i18n = {
 const Available = ({ lang, theme }) => {
   return (
     <div
-      className={`inline-block mb-16 p-6 text-xl rounded-lg shadow-custom ${theme.primaryText} ${theme.greenBg}`}>
+      className={`inline-block mb-16 p-6 text-xl rounded-lg ${theme.primaryText} ${theme.greenBg} ${theme.shadow}`}>
       <div className='serif italic mb-3'>{i18n[lang].project}</div>
       {i18n[lang].notAvailable}
       <div>
