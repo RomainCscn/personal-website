@@ -5,8 +5,9 @@ import CV from './cv';
 import github from '../../content/assets/images/logo/github.svg';
 import linkedin from '../../content/assets/images/logo/linkedin.svg';
 
-const Description = props => (
-  <div className='flex flex-col mb-16 px-3 py-6 bg-white rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center'>
+const Description = (props) => (
+  <div
+    className={`flex flex-col mb-16 px-3 py-6 rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center ${props.theme.primaryBg} ${props.theme.primaryText}`}>
     <Image
       className='rounded-full mb-8 sm:mr-6 sm:mb-0 md:mr-12 sm:w-1/4'
       fluid={props.image}

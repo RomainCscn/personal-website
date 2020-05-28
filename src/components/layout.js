@@ -38,18 +38,14 @@ const i18n = {
   },
 };
 
-const Layout = props => {
-  const { children, lang } = props;
-
-  return (
-    <div>
-      <div className='container mx-auto px-4'>
-        <Nav i18n={i18n[lang]} />
-        <main>{children}</main>
-      </div>
-      <Footer i18n={i18n[lang]} />
+const Layout = ({ children, lang, theme }) => (
+  <>
+    <div className='container mx-auto px-4'>
+      <Nav i18n={i18n[lang]} theme={theme} />
+      <main>{children}</main>
     </div>
-  );
-};
+    <Footer i18n={i18n[lang]} />
+  </>
+);
 
 export default Layout;

@@ -5,10 +5,15 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Project from '../components/project';
 import Available from '../components/available';
+import { ThemeContext } from '../context/theme';
+import { THEME } from '../styles/theme';
 
 import projects from '../data/projects.json';
 
-const Projects = props => {
+const Projects = (props) => {
+  const { colorMode } = React.useContext(ThemeContext);
+  const theme = THEME[colorMode] || THEME.light;
+
   const imagesData = useStaticQuery(graphql`
     query {
       images: allFile(
@@ -28,17 +33,17 @@ const Projects = props => {
   `);
 
   return (
-    <Layout lang='en' location={props.location}>
+    <Layout lang='en' location={props.location} theme={theme}>
       <SEO title='Personal projects' />
-      <div className='mb-16'>
+      <div className={`mb-16 ${theme.primaryText}`}>
         <h2 className='serif text-4xl'>Personal projects</h2>
         <p className='serif italic'>
           The personal projects I've been working on lately
         </p>
       </div>
       <div className='flex flex-col items-center'>
-        {projects.map(project => {
-          const image = imagesData.images.edges.find(img => {
+        {projects.map((project) => {
+          const image = imagesData.images.edges.find((img) => {
             return img.node.childImageSharp.fluid.src.includes(
               project.imageName
             );
@@ -56,11 +61,12 @@ const Projects = props => {
               tags={project.tags}
               objectFit={project.objectFit}
               image={image.node.childImageSharp.fluid}
+              theme={theme}
               lang='en'></Project>
           );
         })}
       </div>
-      <Available lang='en' />
+      <Available theme={theme} lang='en' />
     </Layout>
   );
 };

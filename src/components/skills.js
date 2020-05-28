@@ -1,7 +1,7 @@
 import React from 'react';
 import Tag from './tag';
 
-const Skills = props => {
+const Skills = (props) => {
   const skills = [
     'HTML/CSS',
     'JavaScript',
@@ -19,15 +19,16 @@ const Skills = props => {
   ];
 
   return (
-    <div className='mb-16 p-6 bg-white rounded-lg shadow-custom md:flex'>
+    <div
+      className={`mb-16 p-6 rounded-lg shadow-custom md:flex ${props.theme.primaryBg} ${props.theme.primaryText}`}>
       <div>
         <h3 className='serif italic text-xl mb-6'>{props.i18n.skillsTitle}</h3>
         <div className='flex flex-wrap mb-6'>
-          {skills.map(skill => (
+          {skills.map((skill) => (
             <Tag
               key={skill}
               tag={skill}
-              className='bg-gray-200 text-blue-700'
+              className={`${props.theme.secondaryBg} ${props.theme.blueTextAccent}`}
             />
           ))}
         </div>
@@ -37,11 +38,11 @@ const Skills = props => {
           {props.i18n.softSkillsTitle}
         </h3>
         <div className='flex flex-wrap mb-6'>
-          {props.i18n.softSkills.map(skill => (
+          {props.i18n.softSkills.map((skill) => (
             <Tag
               key={skill}
               tag={skill}
-              className='bg-gray-200 text-green-700'
+              className={`${props.theme.secondaryBg} ${props.theme.greenTextAccent}`}
             />
           ))}
         </div>

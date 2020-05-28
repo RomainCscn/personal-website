@@ -39,17 +39,18 @@ const i18n = {
   },
 };
 
-const Available = props => {
+const Available = ({ lang, theme }) => {
   return (
-    <div className='inline-block mb-16 p-6 text-xl text-gray-800 bg-green-100 rounded-lg shadow-custom'>
-      <div className='serif italic mb-3'>{i18n[props.lang].project}</div>
-      {i18n[props.lang].notAvailable}
+    <div
+      className={`inline-block mb-16 p-6 text-xl rounded-lg shadow-custom ${theme.primaryText} ${theme.greenBg}`}>
+      <div className='serif italic mb-3'>{i18n[lang].project}</div>
+      {i18n[lang].notAvailable}
       <div>
         <a
           href='https://www.malt.fr/profile/romaincascino'
           className='bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-4 mb-4 py-2 px-4 rounded inline-flex items-center'>
           <img className='w-6 h-6 mr-2' src={maltLogo} alt='Malt logo'></img>
-          <span>{i18n[props.lang].malt}</span>
+          <span>{i18n[lang].malt}</span>
         </a>
         <a
           href='mailto:contact@romaincascino.com'
@@ -63,7 +64,7 @@ const Available = props => {
               <path d='M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z' />
             </g>
           </svg>
-          <span>{i18n[props.lang].contact}</span>
+          <span>{i18n[lang].contact}</span>
         </a>
       </div>
     </div>

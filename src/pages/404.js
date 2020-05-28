@@ -4,8 +4,13 @@ import Image from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { ThemeContext } from '../context/theme';
+import { THEME } from '../styles/theme';
 
-const PageNotFound = props => {
+const PageNotFound = (props) => {
+  const { colorMode } = React.useContext(ThemeContext);
+  const theme = THEME[colorMode] || THEME.light;
+
   const data = useStaticQuery(graphql`
     query PageNotFoundQuery {
       notfound: file(absolutePath: { regex: "/notfound.png/" }) {
@@ -26,9 +31,9 @@ const PageNotFound = props => {
   }, [isEnglish, lang]);
 
   return (
-    <Layout lang={lang} location={props.location}>
+    <Layout lang={lang} location={props.location} theme={theme}>
       <SEO title={isEnglish ? 'Page not found' : 'Page non trouvée'} />
-      <div className='mb-12'>
+      <div className={`mb-12 ${theme.primaryText}`}>
         <h2 className='serif text-4xl'>
           {isEnglish ? 'Page not found' : 'Page non trouvée'}
         </h2>

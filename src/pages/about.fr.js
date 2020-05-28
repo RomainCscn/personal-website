@@ -7,6 +7,8 @@ import Description from '../components/description';
 import Skills from '../components/skills';
 import Hobbies from '../components/hobbies';
 import Available from '../components/available';
+import { ThemeContext } from '../context/theme';
+import { THEME } from '../styles/theme';
 
 const i18n = {
   description: (
@@ -76,7 +78,10 @@ const i18n = {
   ),
 };
 
-const About = props => {
+const About = (props) => {
+  const { colorMode } = React.useContext(ThemeContext);
+  const theme = THEME[colorMode] || THEME.light;
+
   const data = useStaticQuery(graphql`
     query {
       profil: file(absolutePath: { regex: "/profile.jpeg/" }) {
@@ -97,18 +102,26 @@ const About = props => {
   `);
 
   return (
-    <Layout lang='fr' location={props.location}>
+    <Layout lang='fr' location={props.location} theme={theme}>
       <SEO title='À propos' />
-      <div className='mb-16'>
+      <div className={`mb-16 ${theme.primaryText}`}>
         <h2 className='serif text-4xl'>À propos</h2>
         <p className='serif italic text-lg'>
           Mon histoire, mes compétences, mes intérêts
         </p>
       </div>
-      <Description i18n={i18n} image={data.profil.childImageSharp.fluid} />
-      <Skills i18n={i18n} />
-      <Hobbies i18n={i18n} image={data.hobbies.childImageSharp.fluid} />
-      <Available lang='fr' />
+      <Description
+        theme={theme}
+        i18n={i18n}
+        image={data.profil.childImageSharp.fluid}
+      />
+      <Skills theme={theme} i18n={i18n} />
+      <Hobbies
+        theme={theme}
+        i18n={i18n}
+        image={data.hobbies.childImageSharp.fluid}
+      />
+      <Available theme={theme} lang='fr' />
     </Layout>
   );
 };

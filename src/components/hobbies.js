@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'gatsby-image';
 
-const Hobbies = props => (
-  <div className='flex flex-col mb-16 p-3 bg-white rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center'>
+const Hobbies = (props) => (
+  <div
+    className={`flex flex-col mb-16 p-3 rounded-lg shadow-custom sm:p-6 sm:flex-row sm:items-start md:items-center ${props.theme.primaryBg} ${props.theme.primaryText}`}>
     <Image
       className='rounded-full mb-8 sm:mr-6 sm:mb-0 md:mr-12 sm:w-1/4'
       fluid={props.image}
