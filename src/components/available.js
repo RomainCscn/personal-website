@@ -40,6 +40,7 @@ const i18n = {
 };
 
 const Available = ({ lang, theme }) => {
+  console.log(lang);
   return (
     <div
       className={`inline-block mb-16 p-6 text-xl rounded-lg ${theme.primaryText} ${theme.greenBg} ${theme.shadow}`}>

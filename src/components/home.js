@@ -60,24 +60,28 @@ const Home = ({ i18n, lang, location, theme }) => {
         </div>
         <Project
           theme={theme}
-          key={projects[0].nameEn}
-          name={projects[0].nameEn}
-          startDate={projects[0].startDateEn}
-          endDate={projects[0].endDateEn}
-          description={projects[0].descriptionEn}
+          key={lang === 'fr' ? projects[0].name : projects[0].nameEn}
+          name={lang === 'fr' ? projects[0].name : projects[0].nameEn}
+          startDate={
+            lang === 'fr' ? projects[0].startDate : projects[0].startDateEn
+          }
+          endDate={lang === 'fr' ? projects[0].endDate : projects[0].endDateEn}
+          description={
+            lang === 'fr' ? projects[0].description : projects[0].descriptionEn
+          }
           link={projects[0].link}
           github={projects[0].github}
           location={projects[0].location}
           tags={projects[0].tags}
           image={data.project.childImageSharp.fluid}
-          lang='en'></Project>
+          lang={lang}></Project>
         <Link
           to='/en/projects'
           className='inline-block sm:hidden bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded no-underline'>
           {i18n(theme).allProjects}
         </Link>
       </div>
-      <Available theme={theme} lang='en' />
+      <Available theme={theme} lang={lang} />
     </Layout>
   );
 };
