@@ -27,10 +27,12 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className={`mb-16 p-4 rounded-lg ${theme.shadow} ${theme.primaryBg} ${theme.primaryText}`}>
+        className={`mb-16 p-4 md:p-8 rounded-lg ${theme.shadow} ${theme.primaryBg} ${theme.primaryText}`}>
         <header>
           <h1 className='text-4xl font-bold'>{post.frontmatter.title}</h1>
-          <p className='mb-16'>{post.frontmatter.date}</p>
+          <p className={`mb-16 ${theme.secondaryText}`}>
+            {post.frontmatter.date}
+          </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>

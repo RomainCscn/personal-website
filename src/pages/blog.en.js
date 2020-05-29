@@ -2,9 +2,15 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Blog from '../components/blog';
 import { ThemeContext } from '../context/theme';
 import { THEME } from '../styles/theme';
+
+const i18n = {
+  allArticles: 'All articles',
+  title: 'Articles',
+  readMore: 'Read more',
+};
 
 const BlogIndex = ({ data, location }) => {
   const { colorMode } = React.useContext(ThemeContext);
@@ -12,23 +18,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout lang='en' location={location} theme={theme}>
-      <SEO title='All articles' />
-      <div className={`mb-12 ${theme.primaryText}`}>
-        <h2 className='serif text-4xl'>Articles</h2>
-      </div>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div
-          key={node.id}
-          className={`mb-12 px-2 py-4 sm:p-4 rounded-lg ${theme.primaryText} ${theme.primaryBg} ${theme.shadow}`}>
-          <Link to={node.fields.slug} className='no-underline'>
-            <h3 className='text-lg font-bold'>{node.frontmatter.title} </h3>
-            <div className={`mb-6 ${theme.secondaryText}`}>
-              {node.frontmatter.date}
-            </div>
-            <p>{node.excerpt}</p>
-          </Link>
-        </div>
-      ))}
+      <Blog i18n={i18n} theme={theme} data={data} />
     </Layout>
   );
 };
