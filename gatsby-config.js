@@ -2,8 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Romain Cascino`,
     author: `Romain Cascino`,
-    description: `Romain Cascino personal website and blog`,
-    siteUrl: `https://romaincascino.com/`,
+    description: `A starter blog demonstrating what Gatsby can do.`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    social: {
+      twitter: `kylemathews`,
+    },
   },
   plugins: [
     {
@@ -30,7 +33,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
-        langKeyDefault: 'en',
+        langKeyDefault: 'fr',
         useLangKeyLayout: false,
         prefixDefault: false,
       },
@@ -60,11 +63,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
+      },
+    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Romain Cascino personal website and blog`,
+        name: `Romain Cascino personal website`,
         short_name: `Romain Cascino`,
         start_url: `/`,
         background_color: `#ffffff`,
