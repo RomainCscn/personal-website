@@ -25,6 +25,7 @@ const PageNotFound = (props) => {
 
   const [isEnglish, setIsEnglish] = useState(false);
   const [lang, setLang] = useState('fr');
+
   useEffect(() => {
     setIsEnglish(window.location.pathname.includes('/en/'));
     setLang(isEnglish ? 'en' : 'fr');

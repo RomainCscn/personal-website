@@ -4,7 +4,7 @@ export const THEME = {
     secondaryText: 'text-gray-400',
     primaryBg: 'bg-gray-800',
     secondaryBg: 'bg-gray-700',
-    greenBg: 'bg-green-800',
+    greenBg: 'bg-green-900',
     indigoTextAccent: 'text-indigo-400',
     blueTextAccent: 'text-blue-200',
     greenTextAccent: 'text-green-200',

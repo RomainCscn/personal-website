@@ -41,7 +41,7 @@ const Nav = ({ i18n, theme }) => {
       <div
         className={`${
           showMobileMenu ? 'flex' : 'hidden'
-        } flex-col items-center text-2xl mt-6 sm:block sm:float-right sm:text-lg sm:mt-0`}>
+        } flex-col sm:flex sm:flex-row items-center sm:items-baseline text-2xl mt-6 sm:float-right sm:text-lg sm:mt-0`}>
         <NavLink title={i18n.aboutTitle} link={i18n.aboutLink} theme={theme} />
         <NavLink
           title={i18n.projectsTitle}

@@ -8,11 +8,11 @@ const i18n = {
     aboutTitle: 'About',
     projectsTitle: 'Projects',
     blogTitle: 'Blog',
-    homeLink: '/en/',
-    aboutLink: '/en/about',
-    projectsLink: '/en/projects',
-    blogLink: '/en/blog',
-    flagLink: '/',
+    homeLink: '/',
+    aboutLink: '/about',
+    projectsLink: '/projects',
+    blogLink: '/blog',
+    flagLink: '/fr',
     flag: '🇫🇷',
     emoji: 'fr',
     resume: {
@@ -24,11 +24,11 @@ const i18n = {
     aboutTitle: 'À propos',
     projectsTitle: 'Projets',
     blogTitle: 'Blog',
-    homeLink: '/',
-    aboutLink: '/about',
-    projectsLink: '/projects',
-    blogLink: '/blog',
-    flagLink: '/en/',
+    homeLink: '/fr',
+    aboutLink: '/fr/about',
+    projectsLink: '/fr/projects',
+    blogLink: '/fr/blog',
+    flagLink: '/',
     flag: '🇺🇸',
     emoji: 'us',
     resume: {
@@ -38,11 +38,11 @@ const i18n = {
   },
 };
 
-const Layout = ({ children, lang, theme }) => (
+const Layout = ({ children, mainClassName, lang, theme }) => (
   <>
     <div className='container mx-auto px-4'>
       <Nav i18n={i18n[lang]} theme={theme} />
-      <main>{children}</main>
+      <main className={mainClassName}>{children}</main>
     </div>
     <Footer i18n={i18n[lang]} />
   </>

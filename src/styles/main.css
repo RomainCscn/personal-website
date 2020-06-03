@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
 }
 
 body.light {
@@ -19,7 +20,32 @@ body.dark {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid #e2e8f0;
+}
+
+.footnotes {
+  margin-top: 2rem;
+}
+
+.footnotes > ol {
+  margin-top: 1rem;
+}
+
+.footnotes > ol > li {
+  display: flex;
+}
+
+.footnotes > ol > li > p {
+  margin-right: 0.5rem;
+}
+.footnotes > ol > li {
+  display: flex;
 }
 
 .serif {

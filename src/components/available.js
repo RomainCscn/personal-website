@@ -40,6 +40,7 @@ const i18n = {
 };
 
 const Available = ({ lang, theme }) => {
+  console.log(lang);
   return (
     <div
       className={`inline-block mb-16 p-6 text-xl rounded-lg ${theme.primaryText} ${theme.greenBg} ${theme.shadow}`}>
@@ -48,13 +49,13 @@ const Available = ({ lang, theme }) => {
       <div>
         <a
           href='https://www.malt.fr/profile/romaincascino'
-          className='bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-4 mb-4 py-2 px-4 rounded inline-flex items-center'>
+          className='bg-green-300 hover:bg-green-400 text-green-800 font-bold mr-4 mb-4 py-2 px-4 rounded inline-flex items-center no-underline'>
           <img className='w-6 h-6 mr-2' src={maltLogo} alt='Malt logo'></img>
           <span>{i18n[lang].malt}</span>
         </a>
         <a
           href='mailto:contact@romaincascino.com'
-          className='bg-green-300 hover:bg-green-400 text-green-800 font-bold py-2 px-4 rounded inline-flex items-center'>
+          className='bg-green-300 hover:bg-green-400 text-green-800 font-bold py-2 px-4 rounded inline-flex items-center no-underline'>
           <svg
             className='fill-current w-6 h-6 mr-2'
             xmlns='http://www.w3.org/2000/svg'

@@ -64,25 +64,6 @@
     ]
   },
   {
-    "name": "The Stoic Homepage",
-    "startDate": "Novembre 2018",
-    "endDate": "Novembre 2018",
-    "location": "Chiang Mai, Thaïlande",
-    "description": "Page d’accueil affichant des citations célèbres de Stoïciens et contenant diverses ressources sur le Stoïcisme (plusieurs milliers de visiteurs uniques).",
-    "nameEn": "The Stoic Homepage",
-    "startDateEn": "November 2018",
-    "endDateEn": "November 2018",
-    "locationEn": "Chiang Mai, Thaïland",
-    "descriptionEn": "Home page displaying famous quotes from Stoics and containing various resources on Stoicism (several thousand unique visitors).",
-    "link": "https://stoic.thehomepage.io",
-    "github": "https://github.com/RomainCscn/stoic-homepage",
-    "imageName": "stoic.png",
-    "tags": [
-      "HTML/CSS",
-      "JavaScript"
-    ]
-  },
-  {
     "name": "Reddit Content Downloader",
     "startDate": "Juillet",
     "endDate": "Aout 2019",
@@ -100,6 +81,25 @@
       "PyQT5"
     ],
     "objectFit": "contain"
+  },
+  {
+    "name": "The Stoic Homepage",
+    "startDate": "Novembre 2018",
+    "endDate": "Novembre 2018",
+    "location": "Chiang Mai, Thaïlande",
+    "description": "Page d’accueil affichant des citations célèbres de Stoïciens et contenant diverses ressources sur le Stoïcisme (plusieurs milliers de visiteurs uniques).",
+    "nameEn": "The Stoic Homepage",
+    "startDateEn": "November 2018",
+    "endDateEn": "November 2018",
+    "locationEn": "Chiang Mai, Thaïland",
+    "descriptionEn": "Home page displaying famous quotes from Stoics and containing various resources on Stoicism (several thousand unique visitors).",
+    "link": "https://stoic.thehomepage.io",
+    "github": "https://github.com/RomainCscn/stoic-homepage",
+    "imageName": "stoic.png",
+    "tags": [
+      "HTML/CSS",
+      "JavaScript"
+    ]
   },
   {
     "name": "Parseur de liens Messenger",
