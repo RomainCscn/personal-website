@@ -4,7 +4,7 @@ date: '2020-06-03T23:00:00.000Z'
 description: ''
 ---
 
-This is my very first post on this blog, and more generally on any blog I've ever had. I've always wanted to have a blog. Being able to share contents, knowledges, fun facts or even personal stories.
+This is my very first post on this blog, and more generally on any blog I've ever had. I've always wanted to have a blog. Being able to share contents, knowledge, fun facts or even personal stories.
 
 I think it's time **now**. I procrastinated a lot to be honest and was thinking about writing articles for a long time.
 
@@ -20,6 +20,6 @@ There is precise guidelines included on the [website](https://100daystooffload.c
 
 > “**Just. Write.**”
 
-It completely blows all the excuses I always made to myself that allowed me to avoid writing. I'm not waiting anymore and I'm starting _today_. See you on the 1st June 2021, with **100** articles on this blog!
+It completely blows all the excuses I always made to myself that allowed me to avoid writing. I'm not waiting anymore and I'm starting _today_. See you on the June 03, 2020, with **100** articles on this blog!
 
 [^1]: [https://100daystooffload.com](https://100daystooffload.com)
