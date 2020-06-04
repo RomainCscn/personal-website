@@ -75,5 +75,14 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-ackee-tracker',
+      options: {
+        domainId: '799ba507-fc8d-4755-bd9b-cd76ca3d80e2',
+        server: 'https://gifinder-analytics.tk',
+        ignoreLocalhost: true,
+        detailed: true,
+      },
+    },
   ],
 };
