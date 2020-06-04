@@ -23,6 +23,19 @@ p {
   margin-bottom: 1.5rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+code {
+  background: #4a5568;
+  color: #f6e05e;
+  padding: 2px 4px;
+}
+
 blockquote {
   margin-bottom: 1.5rem;
   padding-left: 1rem;
