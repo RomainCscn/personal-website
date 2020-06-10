@@ -1,0 +1,2 @@
+I was a productivity addict. I admit. Always trying to find the best system that will finally allow me to be the most productive. I was in search of **THE productivity**. Often blaming myself when I postponed the things I had to do that really matters (in my eyes). And I thought it was because I was not productive enough, so searching resources on productivity, trying every system out there would finally lead to the most productive version of me, isn't it? I helped a bit, as I picked a few  a lot about productivity, but it did not solve my **procrastination**. 
+
