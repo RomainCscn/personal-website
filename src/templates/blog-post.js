@@ -29,7 +29,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
       <article
         className={`mb-16 p-4 md:p-8 rounded-lg ${theme.shadow} ${theme.primaryBg} ${theme.primaryText}`}>
         <header>
-          <h1 className='text-4xl font-bold'>{post.frontmatter.title}</h1>
+          <h1 className='text-2xl sm:text-4xl font-bold'>
+            {post.frontmatter.title}
+          </h1>
           <p className={`mb-16 ${theme.secondaryText}`}>
             {post.frontmatter.date}
           </p>
