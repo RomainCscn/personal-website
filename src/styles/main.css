@@ -23,6 +23,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+section ul {
+  margin-bottom: 1rem;
+  list-style: inside;
+}
+
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
