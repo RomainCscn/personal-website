@@ -14,8 +14,8 @@ const i18n = {
   description: (
     <div>
       Je m'appelle Romain Cascino et je suis ingénieur en informatique,
-      spécialisé dans le développement web. Diplômé en 2017, j'ai rejoins
-      MyScript, à Nantes, en tant que développeur web responsable des{' '}
+      spécialisé dans le développement web full stack. Diplômé en 2017, j'ai
+      rejoins MyScript, à Nantes, en tant que développeur web responsable des{' '}
       <a className='external-link' href='https://github.com/MyScript'>
         librairies front-end
       </a>{' '}
@@ -41,9 +41,17 @@ const i18n = {
         de la plateforme OpenClassrooms.
       </p>
       <p className='mt-2'>
-        Actuellement en mission à LaFourchette depuis Octobre 2019 où je
-        développe le nouveau système de facturation à l'aide de micro-services
-        Node.js et d'un front en React.
+        D'octobre 2019 à décembre 2020, j'ai développé le nouveau service de
+        facturation de TheFork (TripAdvisor), avec l'implémentation de
+        micro-services en Node.js et d'un front-end en React.
+      </p>
+      <p className='mt-2'>
+        Depuis Janvier 2021, je travaille chez Swile en tant que Full Stack
+        Engineer, sur de nombreuses missions liées à{' '}
+        <a href='https://www.swile.co/en/solutions/insights'>
+          la partie Insights
+        </a>
+        .
       </p>
     </div>
   ),

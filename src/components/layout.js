@@ -7,11 +7,9 @@ const i18n = {
   en: {
     aboutTitle: 'About',
     projectsTitle: 'Projects',
-    blogTitle: 'Blog',
     homeLink: '/en/',
     aboutLink: '/en/about',
     projectsLink: '/en/projects',
-    blogLink: '/en/blog',
     flagLink: '/',
     flag: '🇫🇷',
     emoji: 'fr',
@@ -23,11 +21,9 @@ const i18n = {
   fr: {
     aboutTitle: 'À propos',
     projectsTitle: 'Projets',
-    blogTitle: 'Blog',
     homeLink: '/',
     aboutLink: '/about',
     projectsLink: '/projects',
-    blogLink: '/blog',
     flagLink: '/en/',
     flag: '🇺🇸',
     emoji: 'us',

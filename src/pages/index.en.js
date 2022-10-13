@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import { ThemeContext } from '../context/theme';
 import { THEME } from '../styles/theme';
+import swile from '../../content/assets/images/swile.png';
 
 import HomeComponent from '../components/home';
 
@@ -13,16 +14,19 @@ const i18n = (theme) => ({
       <h2 className='text-2xl font-semibold'>
         French software engineer specialized in{' '}
         <span className={`font-bold ${theme.indigoTextAccent}`}>
-          web development
+          full stack web development
         </span>
         .
       </h2>
-      <h2 className='mt-4 text-xl font-semibold'>
-        Currently based in Nantes (France) as a{' '}
-        <span className={`font-bold ${theme.indigoTextAccent}`}>
-          freelancer
-        </span>
-        .
+      <h2 className='mt-4 text-xl font-semibold flex'>
+        Currently at
+        <a
+          href='https://www.swile.co/en'
+          className={`flex items-center font-bold ${theme.indigoTextAccent} mr-1`}>
+          <img src={swile} alt='Swile logo' className='w-6 h-6 ml-2 mr-1' />
+          Swile
+        </a>{' '}
+        in full remote.
       </h2>
       <Link
         to='/en/about'

@@ -1,5 +1,35 @@
 [
   {
+    "name": "Chai around the world",
+    "startDate": "Août",
+    "endDate": "Septembre 2022",
+    "location": "Wageningen, Pays-Bas",
+    "description": "Application web pour ajouter, classer et noter ses Chai Latte (boisson indienne adorée par ma conjointe).",
+    "nameEn": "Chai around the world",
+    "startDateEn": "August",
+    "endDateEn": "September 2022",
+    "locationEn": "Wageningen, Netherlands",
+    "descriptionEn": "Web application to add, rate and sort Chai Latte (my partner's favorite Indian beverage).",
+    "link": "https://chai-around-the-world.fly.dev",
+    "imageName": "chai.png",
+    "tags": ["Remix", "React", "TypeScript", "Prisma"]
+  },
+  {
+    "name": "Yaniv",
+    "startDate": "Novembre",
+    "endDate": "Décembre 2020",
+    "location": "Nantes, France",
+    "description": "Application web pour jouer au jeu de cartes Yaniv en ligne, entre amis (fait pendant un confinement).",
+    "nameEn": "Yaniv",
+    "startDateEn": "November",
+    "endDateEn": "December 2020",
+    "locationEn": "Nantes, France",
+    "descriptionEn": "Web application to play the card game Yaniv online, with friends (made during a Covid lockdown).",
+    "link": "https://yaniv.netlify.app",
+    "imageName": "yaniv.png",
+    "tags": ["React", "TypeScript", "Node.js", "WebSocket"]
+  },
+  {
     "name": "GIFinder",
     "startDate": "Janvier",
     "endDate": "Avril 2020",
@@ -36,12 +66,7 @@
     "descriptionEn": "Creation of a platform to make the discovery of french cultural content on YouTube easier. Design from scratch.",
     "link": "https://educulture.video",
     "imageName": "educulture.png",
-    "tags": [
-      "HTML/CSS",
-      "Vue.js",
-      "TypeScript",
-      "Python"
-    ]
+    "tags": ["Vue.js", "TypeScript", "Python"]
   },
   {
     "name": "Guess the Date",
@@ -54,14 +79,9 @@
     "endDateEn": "April 2019",
     "locationEn": "Nantes, France",
     "descriptionEn": "Creation of a mobile game (Android and iOS) whose purpose is to guess the creation/release date from an image (painting and video games).",
-    "link": "https://guessthedate.io",
+    "link": "https://guessthedate.app",
     "imageName": "guessthedate.png",
-    "tags": [
-      "React Native",
-      "MobX",
-      "Realm",
-      "Firebase"
-    ]
+    "tags": ["React Native", "MobX", "Realm", "Firebase"]
   },
   {
     "name": "Reddit Content Downloader",
@@ -76,10 +96,7 @@
     "descriptionEn": "Python application (cli and Mac) allowing you to download images/videos from different subreddit.",
     "github": "https://github.com/RomainCscn/reddit-content-downloader",
     "imageName": "reddit.png",
-    "tags": [
-      "Python",
-      "PyQT5"
-    ],
+    "tags": ["Python", "PyQT5"],
     "objectFit": "contain"
   },
   {
@@ -96,10 +113,7 @@
     "link": "https://stoic.thehomepage.io",
     "github": "https://github.com/RomainCscn/stoic-homepage",
     "imageName": "stoic.png",
-    "tags": [
-      "HTML/CSS",
-      "JavaScript"
-    ]
+    "tags": ["HTML/CSS", "Vanilla JavaScript"]
   },
   {
     "name": "Parseur de liens Messenger",
@@ -114,12 +128,7 @@
     "descriptionEn": "A parser of links sent during a Facebook messenger chat with client-based or web server-based use (REST API). Web client in Vue.js displaying links, different filters and statistics.",
     "github": "https://github.com/RomainCscn/messenger-links-parser",
     "imageName": "parser.png",
-    "tags": [
-      "Rust",
-      "HTML/CSS",
-      "JavaScript",
-      "Vue.js"
-    ]
+    "tags": ["Rust", "Vue.js", "HTML/CSS", "JavaScript"]
   },
   {
     "name": "Kerinci Kultur",
@@ -132,14 +141,9 @@
     "endDateEn": "September 2018",
     "locationEn": "Kerinci, Indonesia",
     "descriptionEn": "Promotional website for an association (Kerinci Kultur) based in Indonesia. Developped during a voluntering partnership.",
-    "link": "https://kerincikultur.com",
+    "link": "https://kerincikultur.netlify.app",
     "github": "https://github.com/RomainCscn/kerinci",
     "imageName": "kerinci.png",
-    "tags": [
-      "HTML/CSS",
-      "JavaScript",
-      "React",
-      "Gatsby"
-    ]
+    "tags": ["HTML/CSS", "JavaScript", "React", "Gatsby"]
   }
 ]
