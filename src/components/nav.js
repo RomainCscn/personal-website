@@ -48,7 +48,6 @@ const Nav = ({ i18n, theme }) => {
           link={i18n.projectsLink}
           theme={theme}
         />
-        <NavLink title={i18n.blogTitle} link={i18n.blogLink} theme={theme} />
         <Link className='my-2 sm:my-0 sm:mr-8 no-underline' to={i18n.flagLink}>
           <span role='img' aria-label={i18n.emoji}>
             {i18n.flag}

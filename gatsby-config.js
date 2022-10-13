@@ -2,17 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Romain Cascino`,
     author: `Romain Cascino`,
-    description: `Romain Cascino personal website and blog`,
+    description: `Romain Cascino personal website`,
     siteUrl: `https://romaincascino.com/`,
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -64,7 +57,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Romain Cascino personal website and blog`,
+        name: `Romain Cascino personal website`,
         short_name: `Romain Cascino`,
         start_url: `/`,
         background_color: `#ffffff`,

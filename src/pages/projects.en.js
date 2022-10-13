@@ -43,6 +43,8 @@ const Projects = (props) => {
       </div>
       <div className='flex flex-col items-center'>
         {projects.map((project) => {
+          console.log(project);
+          console.log(imagesData);
           const image = imagesData.images.edges.find((img) => {
             return img.node.childImageSharp.fluid.src.includes(
               project.imageName
@@ -60,7 +62,7 @@ const Projects = (props) => {
               location={project.locationEn}
               tags={project.tags}
               objectFit={project.objectFit}
-              image={image.node.childImageSharp.fluid}
+              image={image?.node.childImageSharp.fluid}
               theme={theme}
               lang='en'></Project>
           );

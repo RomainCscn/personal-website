@@ -51,9 +51,6 @@ const Footer = (props) => {
           <NavLink
             title={props.i18n.projectsTitle}
             link={props.i18n.projectsLink}></NavLink>
-          <NavLink
-            title={props.i18n.blogTitle}
-            link={props.i18n.blogLink}></NavLink>
         </div>
         <div className='text-gray-500'>
           Copyright Romain Cascino {new Date().getFullYear()} ©

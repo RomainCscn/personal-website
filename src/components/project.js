@@ -24,7 +24,7 @@ const createLink = (text, theme) => {
 const GitHubLink = ({ link, className }) => (
   <a
     href={link}
-    className={`${className} bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center`}>
+    className={`${className} bg-indigo-300 hover:bg-indigo-400 text-indigo-800 font-bold mr-2 py-2 px-4 rounded inline-flex items-center no-underline`}>
     <img className='w-5 mr-2' src={githubImage} alt='GitHub logo' />
     <span>GitHub</span>
   </a>
