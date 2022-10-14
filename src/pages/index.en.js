@@ -12,7 +12,7 @@ const i18n = (theme) => ({
   introduction: (
     <div>
       <h2 className='text-2xl font-semibold'>
-        French software engineer specialized in{' '}
+        Software engineer specialized in{' '}
         <span className={`font-bold ${theme.indigoTextAccent}`}>
           full stack web development
         </span>

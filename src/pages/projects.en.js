@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Project from '../components/project';
-import Available from '../components/available';
 import { ThemeContext } from '../context/theme';
 import { THEME } from '../styles/theme';
 
@@ -68,7 +67,6 @@ const Projects = (props) => {
           );
         })}
       </div>
-      <Available theme={theme} lang='en' />
     </Layout>
   );
 };

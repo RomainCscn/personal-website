@@ -6,25 +6,30 @@ import SEO from '../components/seo';
 import Description from '../components/description';
 import Skills from '../components/skills';
 import Hobbies from '../components/hobbies';
-import Available from '../components/available';
 import { ThemeContext } from '../context/theme';
 import { THEME } from '../styles/theme';
 
 const i18n = {
   description: (
     <div>
-      Je m'appelle Romain Cascino et je suis ingénieur en informatique,
-      spécialisé dans le développement web full stack. Diplômé en 2017, j'ai
-      rejoins MyScript, à Nantes, en tant que développeur web responsable des{' '}
-      <a className='external-link' href='https://github.com/MyScript'>
-        librairies front-end
-      </a>{' '}
-      et des{' '}
-      <a className='external-link' href='https://webdemo.myscript.com'>
-        webdemo
-      </a>
-      . En août 2018, je suis parti en Asie du Sud-Est lors d'un voyage en
-      solitaire, pour prendre du temps et vivre de nouvelles expériences. <br />
+      <p>
+        Je m'appelle Romain Cascino et je suis ingénieur en informatique,
+        spécialisé dans le développement web full stack. Diplômé en 2017, j'ai
+        rejoins MyScript, à Nantes, en tant que développeur web responsable des{' '}
+        <a className='external-link' href='https://github.com/MyScript'>
+          librairies front-end
+        </a>{' '}
+        et des{' '}
+        <a className='external-link' href='https://webdemo.myscript.com'>
+          webdemo
+        </a>
+        .
+      </p>
+      <p>
+        {' '}
+        En août 2018, je suis parti en Asie du Sud-Est lors d'un voyage en
+        solitaire, pour prendre du temps et vivre de nouvelles expériences.{' '}
+      </p>
       <p className='mt-2'>
         Je reviens m'installer à Nantes en janvier 2019 afin de travailler sur
         <Link className='internal-link' to='/projects'>
@@ -42,7 +47,7 @@ const i18n = {
       </p>
       <p className='mt-2'>
         D'octobre 2019 à décembre 2020, j'ai développé le nouveau service de
-        facturation de TheFork (TripAdvisor), avec l'implémentation de
+        facturation de TheFork (Tripadvisor), avec l'implémentation de
         micro-services en Node.js et d'un front-end en React.
       </p>
       <p className='mt-2'>
@@ -129,7 +134,6 @@ const About = (props) => {
         i18n={i18n}
         image={data.hobbies.childImageSharp.fluid}
       />
-      <Available theme={theme} lang='fr' />
     </Layout>
   );
 };

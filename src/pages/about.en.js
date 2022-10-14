@@ -6,25 +6,30 @@ import SEO from '../components/seo';
 import Description from '../components/description';
 import Skills from '../components/skills';
 import Hobbies from '../components/hobbies';
-import Available from '../components/available';
 import { ThemeContext } from '../context/theme';
 import { THEME } from '../styles/theme';
 
 const i18n = {
   description: (
     <div>
-      My name is Romain Cascino, I'm a software engineer specialized in web
-      development. I got my degree in 2017 and joined MyScript at Nantes where I
-      worked as a web developer, in charge of the{' '}
-      <a className='external-link' href='https://github.com/MyScript'>
-        front-end librairies
-      </a>{' '}
-      as well as the{' '}
-      <a className='external-link' href='https://webdemo.myscript.com'>
-        webdemo
-      </a>
-      . In august 2018, I traveled to South-East Asia during a solo trip, to
-      take time for myself and live new experiences. <br />
+      <p>
+        My name is Romain Cascino, I'm a software engineer specialized in web
+        development. I got my degree in 2017 and joined MyScript at Nantes where
+        I worked as a web developer, in charge of the{' '}
+        <a className='external-link' href='https://github.com/MyScript'>
+          front-end librairies
+        </a>{' '}
+        as well as the{' '}
+        <a className='external-link' href='https://webdemo.myscript.com'>
+          webdemo
+        </a>
+        .
+      </p>
+      <p>
+        {' '}
+        In august 2018, I traveled to South-East Asia during a solo trip, to
+        take time for myself and live new experiences.{' '}
+      </p>
       <p className='mt-2'>
         I went back to Nantes in january 2019 to work on
         <Link className='internal-link' to='/projects'>
@@ -41,9 +46,14 @@ const i18n = {
         .
       </p>
       <p className='mt-2'>
-        Currently in a mission at TheFork where I'm building the new billing
-        system using Node.js microservices and frontend components built in
-        React.
+        From October 2019 to December 2020, I built the new billing system of
+        TheFork (Tripadvisor) using Node.js microservices and frontend
+        interfaces in React.
+      </p>
+      <p>
+        Since January 2021, I'm working at Swile as a full stack Senior Software
+        Engineer, with several missions related to the project{' '}
+        <a href='https://www.swile.co/en/solutions/insights'>Insights</a>.
       </p>
     </div>
   ),
@@ -121,7 +131,6 @@ const About = (props) => {
         image={data.hobbies.childImageSharp.fluid}
         theme={theme}
       />
-      <Available theme={theme} lang='en' />
     </Layout>
   );
 };

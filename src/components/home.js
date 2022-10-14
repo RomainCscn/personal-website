@@ -4,7 +4,6 @@ import Image from 'gatsby-image';
 
 import Layout from './layout';
 import SEO from './seo';
-import Available from './available';
 import Project from './project';
 
 import projects from '../data/projects.json';
@@ -12,9 +11,9 @@ import projects from '../data/projects.json';
 const Home = ({ i18n, lang, location, theme }) => {
   const data = useStaticQuery(graphql`
     query {
-      project: file(absolutePath: { regex: "/gifinder.png/" }) {
+      project: file(absolutePath: { regex: "/chai.png/" }) {
         childImageSharp {
-          fluid(maxWidth: 600, maxHeight: 450) {
+          fluid(maxWidth: 600, maxHeight: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -81,7 +80,6 @@ const Home = ({ i18n, lang, location, theme }) => {
           {i18n(theme).allProjects}
         </Link>
       </div>
-      <Available theme={theme} lang={lang} />
     </Layout>
   );
 };

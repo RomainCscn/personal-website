@@ -7,15 +7,16 @@ const Skills = (props) => {
     'JavaScript',
     'TypeScript',
     'React',
-    'React Native',
-    'Vue.js',
     'Node.js',
+    'SQL',
+    'PostgreSQL',
+    'Vue.js',
     'Python',
     'Django',
     'Rust',
-    'SQL',
     'NoSQL',
-    'PostgreSQL',
+    'Docker',
+    'Kubernetes',
   ];
 
   return (
